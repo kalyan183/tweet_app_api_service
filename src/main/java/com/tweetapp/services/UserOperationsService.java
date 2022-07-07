@@ -47,7 +47,7 @@ public class UserOperationsService {
             throw new UsernameAlreadyExists("username already exists");
         }
         log.debug("registered user with userName: {}", user.getEmail());
-        meterRegistry.counter(AppMetrics.Type.Register.KEY).increment();
+        meterRegistry.counter(AppMetrics.REGISTER).increment();
         return userRepository.save(user);
     }
 

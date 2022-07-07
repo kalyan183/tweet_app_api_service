@@ -10,44 +10,18 @@ import lombok.NoArgsConstructor;
  * @project tweet_app_api_service.
  * @since 02/07/2022 - 09:35 PM
  */
-@NoArgsConstructor(access = AccessLevel.PRIVATE)
-public abstract class AppMetrics {
 
-    public abstract static class Type {
+public final class AppMetrics {
 
-        public abstract static class Login {
-
-            public static final String KEY = "tweet.app.user.account.login";
-        }
-
-        public abstract static class Register {
-
-            public static final String KEY = "tweet.app.user.account.register";
-        }
-
-        public abstract static class Post {
-
-            public static final String KEY = "tweet.app.user.tweets.post";
-        }
-
-        public abstract static class Update {
-
-            public static final String KEY = "tweet.app.user.tweets.update";
-        }
-
-        public abstract static class Delete {
-
-            public static final String KEY = "tweet.app.user.tweets.delete";
-        }
-
-        public abstract static class Like {
-
-            public static final String KEY = "tweet.app.user.tweets.like";
-        }
-
-        public abstract static class Dislike {
-
-            public static final String KEY = "tweet.app.user.tweets.dislike";
-        }
+    private AppMetrics() {
+        throw new UnsupportedOperationException("This is a utility class and cannot be instantiated");
     }
+
+    public static final String LOGIN = "tweet.app.user.account.login";
+    public static final String REGISTER = "tweet.app.user.account.register";
+    public static final String POST = "tweet.app.user.tweets.post";
+    public static final String UPDATE = "tweet.app.user.tweets.update";
+    public static final String DELETE = "tweet.app.user.tweets.delete";
+    public static final String LIKE = "tweet.app.user.tweets.like";
+    public static final String DISLIKE = "tweet.app.user.tweets.dislike";
 }

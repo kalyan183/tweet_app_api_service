@@ -67,7 +67,7 @@ public class UserAuthController {
         try {
             authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(username, password));
             log.debug("successfully logged in with userName: {}", username);
-            meterRegistry.counter(AppMetrics.Type.Login.KEY).increment();
+            meterRegistry.counter(AppMetrics.LOGIN).increment();
         } catch (Exception e) {
             return new ResponseEntity<>(new AuthenticationResponse("Bad Credentials " + username), HttpStatus.UNAUTHORIZED);
         }

@@ -70,7 +70,7 @@ public class TweetService {
     // Method to post a new tweet
     public Tweet postNewTweet(final String username, final Tweet newTweet) {
         newTweet.setTweetId(UUID.randomUUID().toString().replace("-", "").substring(0, 10));
-        meterRegistry.counter(AppMetrics.Type.Post.KEY).increment();
+        meterRegistry.counter(AppMetrics.POST).increment();
         log.debug("Posted new tweet for user : {} ", username);
         return tweetRepository.insert(newTweet);
     }
@@ -102,7 +102,7 @@ public class TweetService {
         if (originalTweetOptional.isPresent()) {
             Tweet tweet = originalTweetOptional.get();
             tweet.setTweetText(updatedTweetText);
-            meterRegistry.counter(AppMetrics.Type.Update.KEY).increment();
+            meterRegistry.counter(AppMetrics.UPDATE).increment();
             log.debug("updated tweet for user : {} ", userId);
             return tweetRepository.save(tweet);
         } else {
@@ -116,7 +116,7 @@ public class TweetService {
     public boolean deleteTweet(final String tweetId) throws TweetDoesNotExistException {
         if (tweetRepository.existsById(tweetId) && !StringUtils.isBlank(tweetId)) {
             tweetRepository.deleteById(tweetId);
-            meterRegistry.counter(AppMetrics.Type.Delete.KEY).increment();
+            meterRegistry.counter(AppMetrics.DELETE).increment();
             log.debug("deleted tweet with tweetId : {} ", tweetId);
             return true;
         } else {
@@ -131,7 +131,7 @@ public class TweetService {
         if (tweetOptional.isPresent()) {
             Tweet tweet = tweetOptional.get();
             tweet.getLikes().add(username);
-            meterRegistry.counter(AppMetrics.Type.Like.KEY).increment();
+            meterRegistry.counter(AppMetrics.LIKE).increment();
             log.debug("liked tweet with tweetId : {} by user : {} ", tweetId, username);
             return tweetRepository.save(tweet);
         } else {
@@ -146,7 +146,7 @@ public class TweetService {
         if (tweetOptional.isPresent()) {
             Tweet tweet = tweetOptional.get();
             tweet.getLikes().remove(username);
-            meterRegistry.counter(AppMetrics.Type.Dislike.KEY).increment();
+            meterRegistry.counter(AppMetrics.DISLIKE).increment();
             log.debug("disliked tweet with tweetId : {} by user : {} ", tweetId, username);
             return tweetRepository.save(tweet);
         } else {
