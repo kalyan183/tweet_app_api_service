@@ -1,4 +1,4 @@
-##TweetAppApiSevice
+# TweetAppApiSevice
 
 Tweet app api service performs user registartion, user login, post, like, delete, update tweets. This project was built using java 8 and uses MongoDB as database. This project uses spring boot framework version is 2.1.x
 
