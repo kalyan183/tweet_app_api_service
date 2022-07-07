@@ -4,9 +4,9 @@ Tweet app api service performs user registartion, user login, post, like, delete
 
 
 ## Local Development server
-1) Before running app make sure you do mvn clean install\
+1) Before running app make sure you do **mvn clean install**
 2) Run the application
-3) If you faced any issue related to define bean for buildproperties, then do mvn clean package
+3) If you faced any issue related to define bean for buildproperties, then do **mvn clean package**
 4) Run the app again
 5) App should be up and running on port 8682.
 
