@@ -1,0 +1,59 @@
+package com.tweetapp.exception;
+
+import com.tweetapp.dto.ExceptionDetails;
+import lombok.extern.log4j.Log4j2;
+import org.springframework.core.Ordered;
+import org.springframework.core.annotation.Order;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.validation.FieldError;
+import org.springframework.web.bind.MethodArgumentNotValidException;
+import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.bind.annotation.ResponseStatus;
+import org.springframework.web.bind.annotation.RestControllerAdvice;
+import org.springframework.web.context.request.WebRequest;
+
+import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
+
+/**
+ * @author Kalyan Kommulapati
+ * @project TweetApp-API
+ * @since 06/07/2022 - 08:37 PM
+ */
+@Log4j2
+@Order(Ordered.HIGHEST_PRECEDENCE)
+@RestControllerAdvice
+public class GlobalExceptionHandler {
+
+    @ResponseStatus(HttpStatus.BAD_REQUEST)
+    @ExceptionHandler(MethodArgumentNotValidException.class)
+    public Map<String, String> handleValidationExceptions(
+            MethodArgumentNotValidException ex) {
+        Map<String, String> errors = new HashMap<>();
+        ex.getBindingResult().getAllErrors().forEach(error -> {
+            String fieldName = ((FieldError) error).getField();
+            String errorMessage = error.getDefaultMessage();
+            errors.put(fieldName, errorMessage);
+        });
+        log.error("{}", errors);
+        return errors;
+    }
+
+    @ResponseStatus(HttpStatus.BAD_REQUEST)
+    @ExceptionHandler(UsernameAlreadyExists.class)
+    public ResponseEntity<Object> handleUserExistsExceptions(UsernameAlreadyExists ex, WebRequest request) {
+        ExceptionDetails errorDetails = new ExceptionDetails(
+                ex.getLocalizedMessage(), "Username already exists.", request.getDescription(false), new Date());
+        return new ResponseEntity<>(errorDetails, HttpStatus.BAD_REQUEST);
+    }
+
+    @ResponseStatus(HttpStatus.UNAUTHORIZED)
+    @ExceptionHandler(TweetDoesNotExistException.class)
+    public ResponseEntity<Object> handleUnauthorizedExceptions(TweetDoesNotExistException ex, WebRequest request) {
+        ExceptionDetails errorDetails = new ExceptionDetails(
+                ex.getLocalizedMessage(), "Could not find Tweet. May be doesn't exist?...", request.getDescription(false), new Date());
+        return new ResponseEntity<>(errorDetails, HttpStatus.UNAUTHORIZED);
+    }
+}
