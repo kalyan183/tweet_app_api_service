@@ -87,3 +87,828 @@ Caused by: java.net.ConnectException: Connection refused: connect
 2022-07-07 10:12:25,041 [INFO] o.s.w.s.DispatcherServlet {RMI TCP Connection(3)-192.168.0.192} Completed initialization in 7 ms
 2022-07-07 10:12:25,065 [INFO] o.m.d.connection {RMI TCP Connection(2)-192.168.0.192} Opened connection [connectionId{localValue:2, serverValue:4}] to localhost:27017
 2022-07-07 10:12:46,175 [INFO] o.s.s.c.ThreadPoolTaskExecutor {Thread-11} Shutting down ExecutorService 'applicationTaskExecutor'
+2022-07-07 14:38:42,943 [INFO] c.t.TweetAppApiApplication {restartedMain} Starting TweetAppApiApplication on DESKTOP-0GESMLH with PID 1264 (started by 888245 in C:\Users\888245\git\FINAL VERSION TWEETAPP\tweet_app_api_service)
+2022-07-07 14:38:42,947 [DEBUG] c.t.TweetAppApiApplication {restartedMain} Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
+2022-07-07 14:38:42,948 [INFO] c.t.TweetAppApiApplication {restartedMain} No active profile set, falling back to default profiles: default
+2022-07-07 14:38:42,976 [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor {restartedMain} Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-07-07 14:38:42,977 [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor {restartedMain} For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-07-07 14:38:43,683 [INFO] o.s.d.r.c.RepositoryConfigurationDelegate {restartedMain} Bootstrapping Spring Data repositories in DEFAULT mode.
+2022-07-07 14:38:43,751 [INFO] o.s.d.r.c.RepositoryConfigurationDelegate {restartedMain} Finished Spring Data repository scanning in 68ms. Found 2 repository interfaces.
+2022-07-07 14:38:44,179 [INFO] o.s.b.w.e.t.TomcatWebServer {restartedMain} Tomcat initialized with port(s): 8682 (http)
+2022-07-07 14:38:44,192 [INFO] o.a.c.c.StandardService {restartedMain} Starting service [Tomcat]
+2022-07-07 14:38:44,192 [INFO] o.a.c.c.StandardEngine {restartedMain} Starting Servlet engine: [Apache Tomcat/9.0.14]
+2022-07-07 14:38:44,208 [INFO] o.a.c.c.AprLifecycleListener {restartedMain} The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Eclipse Foundation\jdk-11.0.12.7-hotspot\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Python310\Scripts\;C:\Python310\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\WindowsPowerShell\Scripts;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Java\jdk1.8.0_261\bin;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\webdrivers;C:\Program Files\Java\jdk1.8.0_261\bin;C:\Users\888245\AppData\Local\Programs\Git\cmd;C:\Program Files\IntelliJ IDEA Community Edition 2021.1.3\bin;;C:\Users\888245\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\888245\AppData\Roaming\npm;.]
+2022-07-07 14:38:44,292 [INFO] o.a.c.c.C.[.[.[.0] {restartedMain} Initializing Spring embedded WebApplicationContext
+2022-07-07 14:38:44,308 [INFO] o.s.w.c.ContextLoader {restartedMain} Root WebApplicationContext: initialization completed in 1331 ms
+2022-07-07 14:38:44,473 [DEBUG] c.t.c.m.MongoDbConfig {restartedMain} Initializing MongoDB uri: mongodb://localhost:27017
+2022-07-07 14:38:44,616 [INFO] o.m.d.cluster {restartedMain} Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2022-07-07 14:38:44,645 [INFO] c.t.c.m.MongoDbConfig {restartedMain} Database Name: 'tweet_app'
+2022-07-07 14:38:44,808 [INFO] o.s.b.d.a.OptionalLiveReloadServer {restartedMain} LiveReload server is running on port 35729
+2022-07-07 14:38:45,075 [INFO] o.s.s.w.DefaultSecurityFilterChain {restartedMain} Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3f1c2fd2, org.springframework.security.web.context.SecurityContextPersistenceFilter@668b6046, org.springframework.security.web.header.HeaderWriterFilter@3874f9d7, org.springframework.security.web.authentication.logout.LogoutFilter@562cfc8c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6c9e1a9c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1604f9da, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@979d5be, org.springframework.security.web.session.SessionManagementFilter@2e7c4b07, org.springframework.security.web.access.ExceptionTranslationFilter@6756e354, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4fbbdf09]
+2022-07-07 14:38:45,166 [INFO] o.s.s.c.ThreadPoolTaskExecutor {restartedMain} Initializing ExecutorService 'applicationTaskExecutor'
+2022-07-07 14:38:45,539 [INFO] o.s.b.w.e.t.TomcatWebServer {restartedMain} Tomcat initialized with port(s): 8071 (http)
+2022-07-07 14:38:45,540 [INFO] o.a.c.c.StandardService {restartedMain} Starting service [Tomcat]
+2022-07-07 14:38:45,540 [INFO] o.a.c.c.StandardEngine {restartedMain} Starting Servlet engine: [Apache Tomcat/9.0.14]
+2022-07-07 14:38:45,572 [INFO] o.a.c.c.C.[.[.[/] {restartedMain} Initializing Spring embedded WebApplicationContext
+2022-07-07 14:38:45,572 [INFO] o.s.w.c.ContextLoader {restartedMain} Root WebApplicationContext: initialization completed in 117 ms
+2022-07-07 14:38:45,588 [INFO] o.s.b.a.e.w.EndpointLinksResolver {restartedMain} Exposing 18 endpoint(s) beneath base path '/insights'
+2022-07-07 14:38:45,648 [INFO] o.s.b.w.e.t.TomcatWebServer {restartedMain} Tomcat started on port(s): 8071 (http) with context path ''
+2022-07-07 14:38:45,664 [INFO] o.s.b.w.e.t.TomcatWebServer {restartedMain} Tomcat started on port(s): 8682 (http) with context path '/api/v1.0'
+2022-07-07 14:38:45,664 [INFO] c.t.TweetAppApiApplication {restartedMain} Started TweetAppApiApplication in 3.007 seconds (JVM running for 4.061)
+2022-07-07 14:38:45,806 [INFO] o.m.d.cluster {RMI TCP Connection(1)-192.168.0.192} Cluster description not yet available. Waiting for 30000 ms before timing out
+2022-07-07 14:38:46,247 [INFO] o.a.c.c.C.[.[.[.0] {RMI TCP Connection(3)-192.168.0.192} Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-07 14:38:46,247 [INFO] o.s.w.s.DispatcherServlet {RMI TCP Connection(3)-192.168.0.192} Initializing Servlet 'dispatcherServlet'
+2022-07-07 14:38:46,250 [INFO] o.s.w.s.DispatcherServlet {RMI TCP Connection(3)-192.168.0.192} Completed initialization in 3 ms
+2022-07-07 14:38:46,681 [INFO] o.m.d.cluster {cluster-ClusterId{value='62c6a29c71491b5020844812', description='null'}-localhost:27017} Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:70) ~[mongo-java-driver-3.12.8.jar:?]
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:128) ~[mongo-java-driver-3.12.8.jar:?]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117) [mongo-java-driver-3.12.8.jar:?]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.PlainSocketImpl.waitForConnect(Native Method) ~[?:?]
+	at java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:107) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224) ~[?:?]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[?:?]
+	at java.net.Socket.connect(Socket.java:609) ~[?:?]
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64) ~[mongo-java-driver-3.12.8.jar:?]
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:79) ~[mongo-java-driver-3.12.8.jar:?]
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65) ~[mongo-java-driver-3.12.8.jar:?]
+	... 3 more
+2022-07-07 14:39:15,818 [WARN] o.s.b.a.m.MongoHealthIndicator {RMI TCP Connection(1)-192.168.0.192} MongoDB health check failed
+org.springframework.dao.DataAccessResourceFailureException: Timed out after 30000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=localhost:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused: connect}}]; nested exception is com.mongodb.MongoTimeoutException: Timed out after 30000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=localhost:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused: connect}}]
+	at org.springframework.data.mongodb.core.MongoExceptionTranslator.translateExceptionIfPossible(MongoExceptionTranslator.java:90) ~[spring-data-mongodb-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.data.mongodb.core.MongoTemplate.potentiallyConvertRuntimeException(MongoTemplate.java:2774) ~[spring-data-mongodb-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.data.mongodb.core.MongoTemplate.execute(MongoTemplate.java:513) ~[spring-data-mongodb-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.data.mongodb.core.MongoTemplate.executeCommand(MongoTemplate.java:428) ~[spring-data-mongodb-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.boot.actuate.mongo.MongoHealthIndicator.doHealthCheck(MongoHealthIndicator.java:46) ~[spring-boot-actuator-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.actuate.health.AbstractHealthIndicator.health(AbstractHealthIndicator.java:84) [spring-boot-actuator-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.actuate.health.CompositeHealthIndicator.health(CompositeHealthIndicator.java:98) [spring-boot-actuator-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.actuate.health.HealthEndpoint.health(HealthEndpoint.java:50) [spring-boot-actuator-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.springframework.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:246) [spring-core-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.boot.actuate.endpoint.invoke.reflect.ReflectiveOperationInvoker.invoke(ReflectiveOperationInvoker.java:76) [spring-boot-actuator-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.actuate.endpoint.annotation.AbstractDiscoveredOperation.invoke(AbstractDiscoveredOperation.java:61) [spring-boot-actuator-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBean.invoke(EndpointMBean.java:126) [spring-boot-actuator-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBean.invoke(EndpointMBean.java:99) [spring-boot-actuator-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:809) [?:?]
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:801) [?:?]
+	at javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1466) [?:?]
+	at javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1307) [?:?]
+	at javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1399) [?:?]
+	at javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:827) [?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:359) [?:?]
+	at sun.rmi.transport.Transport$1.run(Transport.java:200) [?:?]
+	at sun.rmi.transport.Transport$1.run(Transport.java:197) [?:?]
+	at java.security.AccessController.doPrivileged(Native Method) [?:?]
+	at sun.rmi.transport.Transport.serviceCall(Transport.java:196) [?:?]
+	at sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:562) [?:?]
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:796) [?:?]
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:677) [?:?]
+	at java.security.AccessController.doPrivileged(Native Method) [?:?]
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:676) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+Caused by: com.mongodb.MongoTimeoutException: Timed out after 30000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=localhost:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused: connect}}]
+	at com.mongodb.internal.connection.BaseCluster.getDescription(BaseCluster.java:182) ~[mongo-java-driver-3.12.8.jar:?]
+	at com.mongodb.internal.connection.SingleServerCluster.getDescription(SingleServerCluster.java:41) ~[mongo-java-driver-3.12.8.jar:?]
+	at com.mongodb.client.internal.MongoClientDelegate.getConnectedClusterDescription(MongoClientDelegate.java:150) ~[mongo-java-driver-3.12.8.jar:?]
+	at com.mongodb.client.internal.MongoClientDelegate.createClientSession(MongoClientDelegate.java:102) ~[mongo-java-driver-3.12.8.jar:?]
+	at com.mongodb.client.internal.MongoClientDelegate$DelegateOperationExecutor.getClientSession(MongoClientDelegate.java:282) ~[mongo-java-driver-3.12.8.jar:?]
+	at com.mongodb.client.internal.MongoClientDelegate$DelegateOperationExecutor.execute(MongoClientDelegate.java:186) ~[mongo-java-driver-3.12.8.jar:?]
+	at com.mongodb.client.internal.MongoDatabaseImpl.executeCommand(MongoDatabaseImpl.java:194) ~[mongo-java-driver-3.12.8.jar:?]
+	at com.mongodb.client.internal.MongoDatabaseImpl.runCommand(MongoDatabaseImpl.java:163) ~[mongo-java-driver-3.12.8.jar:?]
+	at com.mongodb.client.internal.MongoDatabaseImpl.runCommand(MongoDatabaseImpl.java:158) ~[mongo-java-driver-3.12.8.jar:?]
+	at org.springframework.data.mongodb.core.MongoTemplate$2.doInDB(MongoTemplate.java:430) ~[spring-data-mongodb-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.data.mongodb.core.MongoTemplate$2.doInDB(MongoTemplate.java:428) ~[spring-data-mongodb-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.data.mongodb.core.MongoTemplate.execute(MongoTemplate.java:511) ~[spring-data-mongodb-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	... 37 more
+2022-07-07 14:39:16,294 [INFO] o.m.d.connection {cluster-ClusterId{value='62c6a29c71491b5020844812', description='null'}-localhost:27017} Opened connection [connectionId{localValue:13, serverValue:1}] to localhost:27017
+2022-07-07 14:39:16,299 [INFO] o.m.d.cluster {cluster-ClusterId{value='62c6a29c71491b5020844812', description='null'}-localhost:27017} Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 0, 23]}, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2786900}
+2022-07-07 14:39:38,498 [INFO] o.a.c.c.C.[.[.[/] {http-nio-8071-exec-1} Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-07 14:39:38,499 [INFO] o.s.w.s.DispatcherServlet {http-nio-8071-exec-1} Initializing Servlet 'dispatcherServlet'
+2022-07-07 14:39:38,500 [INFO] o.s.w.s.DispatcherServlet {http-nio-8071-exec-1} Completed initialization in 1 ms
+2022-07-07 14:41:33,169 [INFO] o.s.s.c.ThreadPoolTaskExecutor {Thread-11} Shutting down ExecutorService 'applicationTaskExecutor'
+2022-07-07 14:43:56,868 [INFO] c.t.TweetAppApiApplication {restartedMain} Starting TweetAppApiApplication on DESKTOP-0GESMLH with PID 8564 (started by 888245 in C:\Users\888245\git\FINAL VERSION TWEETAPP\tweet_app_api_service)
+2022-07-07 14:43:56,872 [DEBUG] c.t.TweetAppApiApplication {restartedMain} Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
+2022-07-07 14:43:56,872 [INFO] c.t.TweetAppApiApplication {restartedMain} No active profile set, falling back to default profiles: default
+2022-07-07 14:43:56,903 [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor {restartedMain} Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-07-07 14:43:56,903 [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor {restartedMain} For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-07-07 14:43:57,698 [INFO] o.s.d.r.c.RepositoryConfigurationDelegate {restartedMain} Bootstrapping Spring Data repositories in DEFAULT mode.
+2022-07-07 14:43:57,762 [INFO] o.s.d.r.c.RepositoryConfigurationDelegate {restartedMain} Finished Spring Data repository scanning in 60ms. Found 2 repository interfaces.
+2022-07-07 14:43:58,207 [INFO] o.s.b.w.e.t.TomcatWebServer {restartedMain} Tomcat initialized with port(s): 8682 (http)
+2022-07-07 14:43:58,227 [INFO] o.a.c.c.StandardService {restartedMain} Starting service [Tomcat]
+2022-07-07 14:43:58,227 [INFO] o.a.c.c.StandardEngine {restartedMain} Starting Servlet engine: [Apache Tomcat/9.0.14]
+2022-07-07 14:43:58,234 [INFO] o.a.c.c.AprLifecycleListener {restartedMain} The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Eclipse Foundation\jdk-11.0.12.7-hotspot\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Python310\Scripts\;C:\Python310\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\WindowsPowerShell\Scripts;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Java\jdk1.8.0_261\bin;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\webdrivers;C:\Program Files\Java\jdk1.8.0_261\bin;C:\Users\888245\AppData\Local\Programs\Git\cmd;C:\Program Files\IntelliJ IDEA Community Edition 2021.1.3\bin;;C:\Users\888245\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\888245\AppData\Roaming\npm;.]
+2022-07-07 14:43:58,332 [INFO] o.a.c.c.C.[.[.[/] {restartedMain} Initializing Spring embedded WebApplicationContext
+2022-07-07 14:43:58,332 [INFO] o.s.w.c.ContextLoader {restartedMain} Root WebApplicationContext: initialization completed in 1429 ms
+2022-07-07 14:43:58,521 [DEBUG] c.t.c.m.MongoDbConfig {restartedMain} Initializing MongoDB uri: mongodb://localhost:27017
+2022-07-07 14:43:58,647 [INFO] o.m.d.cluster {restartedMain} Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2022-07-07 14:43:58,668 [INFO] c.t.c.m.MongoDbConfig {restartedMain} Database Name: 'tweet_app'
+2022-07-07 14:43:58,687 [INFO] o.m.d.connection {cluster-ClusterId{value='62c6a3d6b063705e021dc587', description='null'}-localhost:27017} Opened connection [connectionId{localValue:1, serverValue:2}] to localhost:27017
+2022-07-07 14:43:58,691 [INFO] o.m.d.cluster {cluster-ClusterId{value='62c6a3d6b063705e021dc587', description='null'}-localhost:27017} Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 0, 23]}, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2008500}
+2022-07-07 14:43:58,832 [INFO] o.s.b.d.a.OptionalLiveReloadServer {restartedMain} LiveReload server is running on port 35729
+2022-07-07 14:43:59,095 [INFO] o.s.s.w.DefaultSecurityFilterChain {restartedMain} Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@275bbf72, org.springframework.security.web.context.SecurityContextPersistenceFilter@69bf3203, org.springframework.security.web.header.HeaderWriterFilter@603853ad, org.springframework.security.web.authentication.logout.LogoutFilter@5cdff175, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5f564ce5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@735519aa, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4549f304, org.springframework.security.web.session.SessionManagementFilter@32a95def, org.springframework.security.web.access.ExceptionTranslationFilter@659efb33, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@54aa0508]
+2022-07-07 14:43:59,215 [INFO] o.s.s.c.ThreadPoolTaskExecutor {restartedMain} Initializing ExecutorService 'applicationTaskExecutor'
+2022-07-07 14:43:59,601 [INFO] o.s.b.w.e.t.TomcatWebServer {restartedMain} Tomcat initialized with port(s): 9283 (http)
+2022-07-07 14:43:59,602 [INFO] o.a.c.c.StandardService {restartedMain} Starting service [Tomcat]
+2022-07-07 14:43:59,602 [INFO] o.a.c.c.StandardEngine {restartedMain} Starting Servlet engine: [Apache Tomcat/9.0.14]
+2022-07-07 14:43:59,630 [INFO] o.a.c.c.C.[.[.[/] {restartedMain} Initializing Spring embedded WebApplicationContext
+2022-07-07 14:43:59,630 [INFO] o.s.w.c.ContextLoader {restartedMain} Root WebApplicationContext: initialization completed in 95 ms
+2022-07-07 14:43:59,644 [INFO] o.s.b.a.e.w.EndpointLinksResolver {restartedMain} Exposing 18 endpoint(s) beneath base path '/insights'
+2022-07-07 14:43:59,697 [INFO] o.s.b.w.e.t.TomcatWebServer {restartedMain} Tomcat started on port(s): 9283 (http) with context path ''
+2022-07-07 14:43:59,709 [INFO] o.s.b.w.e.t.TomcatWebServer {restartedMain} Tomcat started on port(s): 8682 (http) with context path ''
+2022-07-07 14:43:59,710 [INFO] c.t.TweetAppApiApplication {restartedMain} Started TweetAppApiApplication in 3.237 seconds (JVM running for 4.402)
+2022-07-07 14:44:00,528 [INFO] o.a.c.c.C.[.[.[/] {RMI TCP Connection(3)-192.168.0.192} Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-07 14:44:00,528 [INFO] o.s.w.s.DispatcherServlet {RMI TCP Connection(3)-192.168.0.192} Initializing Servlet 'dispatcherServlet'
+2022-07-07 14:44:00,533 [INFO] o.s.w.s.DispatcherServlet {RMI TCP Connection(3)-192.168.0.192} Completed initialization in 5 ms
+2022-07-07 14:44:00,552 [INFO] o.m.d.connection {RMI TCP Connection(2)-192.168.0.192} Opened connection [connectionId{localValue:2, serverValue:3}] to localhost:27017
+2022-07-07 14:44:25,372 [INFO] o.a.c.c.C.[.[.[/] {http-nio-9283-exec-1} Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-07 14:44:25,372 [INFO] o.s.w.s.DispatcherServlet {http-nio-9283-exec-1} Initializing Servlet 'dispatcherServlet'
+2022-07-07 14:44:25,373 [INFO] o.s.w.s.DispatcherServlet {http-nio-9283-exec-1} Completed initialization in 1 ms
+2022-07-07 14:44:58,674 [INFO] o.m.d.connection {MaintenanceTimer-1-thread-1} Closed connection [connectionId{localValue:2, serverValue:3}] to localhost:27017 because it is past its maximum allowed idle time.
+2022-07-07 14:45:54,092 [INFO] o.s.s.c.ThreadPoolTaskExecutor {Thread-11} Shutting down ExecutorService 'applicationTaskExecutor'
+2022-07-07 14:45:59,418 [INFO] c.t.TweetAppApiApplication {restartedMain} Starting TweetAppApiApplication on DESKTOP-0GESMLH with PID 16080 (started by 888245 in C:\Users\888245\git\FINAL VERSION TWEETAPP\tweet_app_api_service)
+2022-07-07 14:45:59,423 [DEBUG] c.t.TweetAppApiApplication {restartedMain} Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
+2022-07-07 14:45:59,423 [INFO] c.t.TweetAppApiApplication {restartedMain} No active profile set, falling back to default profiles: default
+2022-07-07 14:45:59,452 [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor {restartedMain} Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-07-07 14:45:59,452 [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor {restartedMain} For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-07-07 14:46:00,157 [INFO] o.s.d.r.c.RepositoryConfigurationDelegate {restartedMain} Bootstrapping Spring Data repositories in DEFAULT mode.
+2022-07-07 14:46:00,218 [INFO] o.s.d.r.c.RepositoryConfigurationDelegate {restartedMain} Finished Spring Data repository scanning in 58ms. Found 2 repository interfaces.
+2022-07-07 14:46:00,662 [INFO] o.s.b.w.e.t.TomcatWebServer {restartedMain} Tomcat initialized with port(s): 8682 (http)
+2022-07-07 14:46:00,682 [INFO] o.a.c.c.StandardService {restartedMain} Starting service [Tomcat]
+2022-07-07 14:46:00,683 [INFO] o.a.c.c.StandardEngine {restartedMain} Starting Servlet engine: [Apache Tomcat/9.0.14]
+2022-07-07 14:46:00,689 [INFO] o.a.c.c.AprLifecycleListener {restartedMain} The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Eclipse Foundation\jdk-11.0.12.7-hotspot\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Python310\Scripts\;C:\Python310\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\WindowsPowerShell\Scripts;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Java\jdk1.8.0_261\bin;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\webdrivers;C:\Program Files\Java\jdk1.8.0_261\bin;C:\Users\888245\AppData\Local\Programs\Git\cmd;C:\Program Files\IntelliJ IDEA Community Edition 2021.1.3\bin;;C:\Users\888245\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\888245\AppData\Roaming\npm;.]
+2022-07-07 14:46:00,785 [INFO] o.a.c.c.C.[.[.[.0] {restartedMain} Initializing Spring embedded WebApplicationContext
+2022-07-07 14:46:00,785 [INFO] o.s.w.c.ContextLoader {restartedMain} Root WebApplicationContext: initialization completed in 1332 ms
+2022-07-07 14:46:00,968 [DEBUG] c.t.c.m.MongoDbConfig {restartedMain} Initializing MongoDB uri: mongodb://localhost:27017
+2022-07-07 14:46:01,116 [INFO] o.m.d.cluster {restartedMain} Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2022-07-07 14:46:01,140 [INFO] c.t.c.m.MongoDbConfig {restartedMain} Database Name: 'tweet_app'
+2022-07-07 14:46:01,160 [INFO] o.m.d.connection {cluster-ClusterId{value='62c6a451bc47d918296b4796', description='null'}-localhost:27017} Opened connection [connectionId{localValue:1, serverValue:4}] to localhost:27017
+2022-07-07 14:46:01,164 [INFO] o.m.d.cluster {cluster-ClusterId{value='62c6a451bc47d918296b4796', description='null'}-localhost:27017} Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 0, 23]}, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2219400}
+2022-07-07 14:46:01,328 [INFO] o.s.b.d.a.OptionalLiveReloadServer {restartedMain} LiveReload server is running on port 35729
+2022-07-07 14:46:01,621 [INFO] o.s.s.w.DefaultSecurityFilterChain {restartedMain} Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6cc23cb, org.springframework.security.web.context.SecurityContextPersistenceFilter@33bb7a65, org.springframework.security.web.header.HeaderWriterFilter@2527cca5, org.springframework.security.web.authentication.logout.LogoutFilter@7e49c19d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@281d7e28, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6a9857e3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@b225c93, org.springframework.security.web.session.SessionManagementFilter@645cd40b, org.springframework.security.web.access.ExceptionTranslationFilter@1e11dd49, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@55419dcc]
+2022-07-07 14:46:01,755 [INFO] o.s.s.c.ThreadPoolTaskExecutor {restartedMain} Initializing ExecutorService 'applicationTaskExecutor'
+2022-07-07 14:46:02,202 [INFO] o.s.b.w.e.t.TomcatWebServer {restartedMain} Tomcat initialized with port(s): 9283 (http)
+2022-07-07 14:46:02,202 [INFO] o.a.c.c.StandardService {restartedMain} Starting service [Tomcat]
+2022-07-07 14:46:02,203 [INFO] o.a.c.c.StandardEngine {restartedMain} Starting Servlet engine: [Apache Tomcat/9.0.14]
+2022-07-07 14:46:02,235 [INFO] o.a.c.c.C.[.[.[/] {restartedMain} Initializing Spring embedded WebApplicationContext
+2022-07-07 14:46:02,235 [INFO] o.s.w.c.ContextLoader {restartedMain} Root WebApplicationContext: initialization completed in 117 ms
+2022-07-07 14:46:02,249 [INFO] o.s.b.a.e.w.EndpointLinksResolver {restartedMain} Exposing 18 endpoint(s) beneath base path '/insights'
+2022-07-07 14:46:02,308 [INFO] o.s.b.w.e.t.TomcatWebServer {restartedMain} Tomcat started on port(s): 9283 (http) with context path ''
+2022-07-07 14:46:02,321 [INFO] o.s.b.w.e.t.TomcatWebServer {restartedMain} Tomcat started on port(s): 8682 (http) with context path '/api/v1.0'
+2022-07-07 14:46:02,322 [INFO] c.t.TweetAppApiApplication {restartedMain} Started TweetAppApiApplication in 3.192 seconds (JVM running for 4.264)
+2022-07-07 14:46:02,495 [INFO] o.m.d.connection {RMI TCP Connection(1)-192.168.0.192} Opened connection [connectionId{localValue:2, serverValue:5}] to localhost:27017
+2022-07-07 14:46:02,927 [INFO] o.a.c.c.C.[.[.[.0] {RMI TCP Connection(3)-192.168.0.192} Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-07 14:46:02,927 [INFO] o.s.w.s.DispatcherServlet {RMI TCP Connection(3)-192.168.0.192} Initializing Servlet 'dispatcherServlet'
+2022-07-07 14:46:02,931 [INFO] o.s.w.s.DispatcherServlet {RMI TCP Connection(3)-192.168.0.192} Completed initialization in 4 ms
+2022-07-07 14:46:06,303 [INFO] o.a.c.c.C.[.[.[/] {http-nio-9283-exec-1} Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-07 14:46:06,304 [INFO] o.s.w.s.DispatcherServlet {http-nio-9283-exec-1} Initializing Servlet 'dispatcherServlet'
+2022-07-07 14:46:06,305 [INFO] o.s.w.s.DispatcherServlet {http-nio-9283-exec-1} Completed initialization in 1 ms
+2022-07-07 14:46:32,593 [INFO] o.s.s.c.ThreadPoolTaskExecutor {Thread-11} Shutting down ExecutorService 'applicationTaskExecutor'
+2022-07-07 14:46:46,355 [INFO] c.t.TweetAppApiApplication {restartedMain} Starting TweetAppApiApplication on DESKTOP-0GESMLH with PID 27072 (started by 888245 in C:\Users\888245\git\FINAL VERSION TWEETAPP\tweet_app_api_service)
+2022-07-07 14:46:46,359 [DEBUG] c.t.TweetAppApiApplication {restartedMain} Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
+2022-07-07 14:46:46,360 [INFO] c.t.TweetAppApiApplication {restartedMain} No active profile set, falling back to default profiles: default
+2022-07-07 14:46:46,388 [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor {restartedMain} Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-07-07 14:46:46,388 [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor {restartedMain} For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-07-07 14:46:47,256 [INFO] o.s.d.r.c.RepositoryConfigurationDelegate {restartedMain} Bootstrapping Spring Data repositories in DEFAULT mode.
+2022-07-07 14:46:47,327 [INFO] o.s.d.r.c.RepositoryConfigurationDelegate {restartedMain} Finished Spring Data repository scanning in 67ms. Found 2 repository interfaces.
+2022-07-07 14:46:47,826 [INFO] o.s.b.w.e.t.TomcatWebServer {restartedMain} Tomcat initialized with port(s): 8682 (http)
+2022-07-07 14:46:47,846 [INFO] o.a.c.c.StandardService {restartedMain} Starting service [Tomcat]
+2022-07-07 14:46:47,847 [INFO] o.a.c.c.StandardEngine {restartedMain} Starting Servlet engine: [Apache Tomcat/9.0.14]
+2022-07-07 14:46:47,853 [INFO] o.a.c.c.AprLifecycleListener {restartedMain} The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Eclipse Foundation\jdk-11.0.12.7-hotspot\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Python310\Scripts\;C:\Python310\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\WindowsPowerShell\Scripts;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Java\jdk1.8.0_261\bin;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\webdrivers;C:\Program Files\Java\jdk1.8.0_261\bin;C:\Users\888245\AppData\Local\Programs\Git\cmd;C:\Program Files\IntelliJ IDEA Community Edition 2021.1.3\bin;;C:\Users\888245\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\888245\AppData\Roaming\npm;.]
+2022-07-07 14:46:47,951 [INFO] o.a.c.c.C.[.[.[.0] {restartedMain} Initializing Spring embedded WebApplicationContext
+2022-07-07 14:46:47,951 [INFO] o.s.w.c.ContextLoader {restartedMain} Root WebApplicationContext: initialization completed in 1563 ms
+2022-07-07 14:46:47,994 [ERROR] o.s.b.w.e.t.TomcatStarter {restartedMain} Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'webMvcMetricsFilter' defined in class path resource [org/springframework/boot/actuate/autoconfigure/metrics/web/servlet/WebMvcMetricsAutoConfiguration.class]: Unsatisfied dependency expressed through method 'webMvcMetricsFilter' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'prometheusMeterRegistry' defined in class path resource [org/springframework/boot/actuate/autoconfigure/metrics/export/prometheus/PrometheusMetricsExportAutoConfiguration.class]: Initialization of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'registerCommonTags' defined in class path resource [com/tweetapp/configs/metrics/MicrometerConfig.class]: Unexpected exception during bean creation; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'management.application.name' in value "${management.application.name}"
+2022-07-07 14:46:48,010 [INFO] o.a.c.c.StandardService {restartedMain} Stopping service [Tomcat]
+2022-07-07 14:46:48,015 [WARN] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext {restartedMain} Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+2022-07-07 14:46:48,024 [INFO] o.s.b.a.l.ConditionEvaluationReportLoggingListener {restartedMain} 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-07-07 14:46:48,029 [ERROR] o.s.b.SpringApplication {restartedMain} Application run failed
+org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:157) ~[spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:540) ~[spring-context-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142) ~[spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775) [spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) [spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) [spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260) [spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248) [spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at com.tweetapp.TweetAppApiApplication.main(TweetAppApiApplication.java:22) [classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+Caused by: org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:125) ~[spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:86) ~[spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:415) ~[spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:174) ~[spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:181) ~[spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:154) ~[spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	... 13 more
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webMvcMetricsFilter' defined in class path resource [org/springframework/boot/actuate/autoconfigure/metrics/web/servlet/WebMvcMetricsAutoConfiguration.class]: Unsatisfied dependency expressed through method 'webMvcMetricsFilter' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'prometheusMeterRegistry' defined in class path resource [org/springframework/boot/actuate/autoconfigure/metrics/export/prometheus/PrometheusMetricsExportAutoConfiguration.class]: Initialization of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'registerCommonTags' defined in class path resource [com/tweetapp/configs/metrics/MicrometerConfig.class]: Unexpected exception during bean creation; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'management.application.name' in value "${management.application.name}"
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:769) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:509) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1288) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1127) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:538) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:235) ~[spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:226) ~[spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addServletContextInitializerBeans(ServletContextInitializerBeans.java:101) ~[spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.<init>(ServletContextInitializerBeans.java:88) ~[spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getServletContextInitializerBeans(ServletWebServerApplicationContext.java:261) ~[spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.selfInitialize(ServletWebServerApplicationContext.java:234) ~[spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.web.embedded.tomcat.TomcatStarter.onStartup(TomcatStarter.java:54) ~[spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5120) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1382) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1372) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140) ~[?:?]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:907) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:831) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1382) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1372) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140) ~[?:?]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:907) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:262) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:423) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:933) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:398) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:106) ~[spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:86) ~[spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:415) ~[spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:174) ~[spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:181) ~[spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:154) ~[spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	... 13 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'prometheusMeterRegistry' defined in class path resource [org/springframework/boot/actuate/autoconfigure/metrics/export/prometheus/PrometheusMetricsExportAutoConfiguration.class]: Initialization of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'registerCommonTags' defined in class path resource [com/tweetapp/configs/metrics/MicrometerConfig.class]: Unexpected exception during bean creation; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'management.application.name' in value "${management.application.name}"
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:584) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1244) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1164) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:857) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:760) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:509) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1288) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1127) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:538) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:235) ~[spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:226) ~[spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addServletContextInitializerBeans(ServletContextInitializerBeans.java:101) ~[spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.<init>(ServletContextInitializerBeans.java:88) ~[spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getServletContextInitializerBeans(ServletWebServerApplicationContext.java:261) ~[spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.selfInitialize(ServletWebServerApplicationContext.java:234) ~[spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.web.embedded.tomcat.TomcatStarter.onStartup(TomcatStarter.java:54) ~[spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5120) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1382) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1372) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140) ~[?:?]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:907) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:831) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1382) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1372) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140) ~[?:?]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:907) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:262) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:423) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:933) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:398) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:106) ~[spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:86) ~[spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:415) ~[spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:174) ~[spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:181) ~[spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:154) ~[spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	... 13 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'registerCommonTags' defined in class path resource [com/tweetapp/configs/metrics/MicrometerConfig.class]: Unexpected exception during bean creation; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'management.application.name' in value "${management.application.name}"
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:511) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1467) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1424) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1270) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1202) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory$DependencyObjectProvider.resolveStream(DefaultListableBeanFactory.java:1925) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory$DependencyObjectProvider.orderedStream(DefaultListableBeanFactory.java:1919) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.boot.actuate.autoconfigure.metrics.MeterRegistryConfigurer.asOrderedList(MeterRegistryConfigurer.java:86) ~[spring-boot-actuator-autoconfigure-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.actuate.autoconfigure.metrics.MeterRegistryConfigurer.customize(MeterRegistryConfigurer.java:71) ~[spring-boot-actuator-autoconfigure-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.actuate.autoconfigure.metrics.MeterRegistryConfigurer.configure(MeterRegistryConfigurer.java:60) ~[spring-boot-actuator-autoconfigure-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.actuate.autoconfigure.metrics.MeterRegistryPostProcessor.postProcessAfterInitialization(MeterRegistryPostProcessor.java:61) ~[spring-boot-actuator-autoconfigure-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:434) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1749) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:576) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1244) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1164) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:857) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:760) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:509) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1288) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1127) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:538) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:235) ~[spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:226) ~[spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addServletContextInitializerBeans(ServletContextInitializerBeans.java:101) ~[spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.<init>(ServletContextInitializerBeans.java:88) ~[spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getServletContextInitializerBeans(ServletWebServerApplicationContext.java:261) ~[spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.selfInitialize(ServletWebServerApplicationContext.java:234) ~[spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.web.embedded.tomcat.TomcatStarter.onStartup(TomcatStarter.java:54) ~[spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5120) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1382) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1372) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140) ~[?:?]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:907) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:831) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1382) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1372) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140) ~[?:?]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:907) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:262) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:423) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:933) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:398) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:106) ~[spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:86) ~[spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:415) ~[spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:174) ~[spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:181) ~[spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:154) ~[spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	... 13 more
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'management.application.name' in value "${management.application.name}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:172) ~[spring-core-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:124) ~[spring-core-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:237) ~[spring-core-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:211) ~[spring-core-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:175) ~[spring-context-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:851) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1185) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1164) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:857) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:760) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:509) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1288) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1127) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:538) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1467) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1424) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1270) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1202) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory$DependencyObjectProvider.resolveStream(DefaultListableBeanFactory.java:1925) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory$DependencyObjectProvider.orderedStream(DefaultListableBeanFactory.java:1919) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.boot.actuate.autoconfigure.metrics.MeterRegistryConfigurer.asOrderedList(MeterRegistryConfigurer.java:86) ~[spring-boot-actuator-autoconfigure-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.actuate.autoconfigure.metrics.MeterRegistryConfigurer.customize(MeterRegistryConfigurer.java:71) ~[spring-boot-actuator-autoconfigure-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.actuate.autoconfigure.metrics.MeterRegistryConfigurer.configure(MeterRegistryConfigurer.java:60) ~[spring-boot-actuator-autoconfigure-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.actuate.autoconfigure.metrics.MeterRegistryPostProcessor.postProcessAfterInitialization(MeterRegistryPostProcessor.java:61) ~[spring-boot-actuator-autoconfigure-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:434) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1749) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:576) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1244) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1164) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:857) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:760) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:509) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1288) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1127) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:538) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:235) ~[spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:226) ~[spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addServletContextInitializerBeans(ServletContextInitializerBeans.java:101) ~[spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.<init>(ServletContextInitializerBeans.java:88) ~[spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getServletContextInitializerBeans(ServletWebServerApplicationContext.java:261) ~[spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.selfInitialize(ServletWebServerApplicationContext.java:234) ~[spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.web.embedded.tomcat.TomcatStarter.onStartup(TomcatStarter.java:54) ~[spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5120) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1382) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1372) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140) ~[?:?]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:907) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:831) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1382) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1372) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140) ~[?:?]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:907) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:262) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:423) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:933) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:398) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:106) ~[spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:86) ~[spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:415) ~[spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:174) ~[spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:181) ~[spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:154) ~[spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	... 13 more
+2022-07-07 14:47:02,893 [INFO] c.t.TweetAppApiApplication {restartedMain} Starting TweetAppApiApplication on DESKTOP-0GESMLH with PID 26820 (started by 888245 in C:\Users\888245\git\FINAL VERSION TWEETAPP\tweet_app_api_service)
+2022-07-07 14:47:02,898 [DEBUG] c.t.TweetAppApiApplication {restartedMain} Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
+2022-07-07 14:47:02,898 [INFO] c.t.TweetAppApiApplication {restartedMain} No active profile set, falling back to default profiles: default
+2022-07-07 14:47:02,925 [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor {restartedMain} Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-07-07 14:47:02,925 [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor {restartedMain} For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-07-07 14:47:03,653 [INFO] o.s.d.r.c.RepositoryConfigurationDelegate {restartedMain} Bootstrapping Spring Data repositories in DEFAULT mode.
+2022-07-07 14:47:03,711 [INFO] o.s.d.r.c.RepositoryConfigurationDelegate {restartedMain} Finished Spring Data repository scanning in 54ms. Found 2 repository interfaces.
+2022-07-07 14:47:04,184 [INFO] o.s.b.w.e.t.TomcatWebServer {restartedMain} Tomcat initialized with port(s): 8682 (http)
+2022-07-07 14:47:04,205 [INFO] o.a.c.c.StandardService {restartedMain} Starting service [Tomcat]
+2022-07-07 14:47:04,206 [INFO] o.a.c.c.StandardEngine {restartedMain} Starting Servlet engine: [Apache Tomcat/9.0.14]
+2022-07-07 14:47:04,211 [INFO] o.a.c.c.AprLifecycleListener {restartedMain} The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Eclipse Foundation\jdk-11.0.12.7-hotspot\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Python310\Scripts\;C:\Python310\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\WindowsPowerShell\Scripts;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Java\jdk1.8.0_261\bin;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\webdrivers;C:\Program Files\Java\jdk1.8.0_261\bin;C:\Users\888245\AppData\Local\Programs\Git\cmd;C:\Program Files\IntelliJ IDEA Community Edition 2021.1.3\bin;;C:\Users\888245\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\888245\AppData\Roaming\npm;.]
+2022-07-07 14:47:04,313 [INFO] o.a.c.c.C.[.[.[.0] {restartedMain} Initializing Spring embedded WebApplicationContext
+2022-07-07 14:47:04,313 [INFO] o.s.w.c.ContextLoader {restartedMain} Root WebApplicationContext: initialization completed in 1388 ms
+2022-07-07 14:47:04,493 [DEBUG] c.t.c.m.MongoDbConfig {restartedMain} Initializing MongoDB uri: mongodb://localhost:27017
+2022-07-07 14:47:04,638 [INFO] o.m.d.cluster {restartedMain} Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2022-07-07 14:47:04,661 [INFO] c.t.c.m.MongoDbConfig {restartedMain} Database Name: 'tweet_app'
+2022-07-07 14:47:04,679 [INFO] o.m.d.connection {cluster-ClusterId{value='62c6a490f715c534ab3a234f', description='null'}-localhost:27017} Opened connection [connectionId{localValue:1, serverValue:6}] to localhost:27017
+2022-07-07 14:47:04,683 [INFO] o.m.d.cluster {cluster-ClusterId{value='62c6a490f715c534ab3a234f', description='null'}-localhost:27017} Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 0, 23]}, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1894300}
+2022-07-07 14:47:04,953 [INFO] o.s.b.d.a.OptionalLiveReloadServer {restartedMain} LiveReload server is running on port 35729
+2022-07-07 14:47:05,212 [INFO] o.s.s.w.DefaultSecurityFilterChain {restartedMain} Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@76a99225, org.springframework.security.web.context.SecurityContextPersistenceFilter@64480d76, org.springframework.security.web.header.HeaderWriterFilter@c6a5109, org.springframework.security.web.authentication.logout.LogoutFilter@2d426521, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@43e2e9c3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@71f71b25, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@55bff835, org.springframework.security.web.session.SessionManagementFilter@6e6ec487, org.springframework.security.web.access.ExceptionTranslationFilter@c9c4fc, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2e408f40]
+2022-07-07 14:47:05,345 [INFO] o.s.s.c.ThreadPoolTaskExecutor {restartedMain} Initializing ExecutorService 'applicationTaskExecutor'
+2022-07-07 14:47:05,519 [INFO] o.s.b.a.e.w.EndpointLinksResolver {restartedMain} Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-07-07 14:47:05,603 [INFO] o.s.b.w.e.t.TomcatWebServer {restartedMain} Tomcat started on port(s): 8682 (http) with context path '/api/v1.0'
+2022-07-07 14:47:05,605 [INFO] c.t.TweetAppApiApplication {restartedMain} Started TweetAppApiApplication in 3.001 seconds (JVM running for 4.044)
+2022-07-07 14:47:06,400 [INFO] o.a.c.c.C.[.[.[.0] {RMI TCP Connection(4)-192.168.0.192} Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-07 14:47:06,400 [INFO] o.s.w.s.DispatcherServlet {RMI TCP Connection(4)-192.168.0.192} Initializing Servlet 'dispatcherServlet'
+2022-07-07 14:47:06,405 [INFO] o.s.w.s.DispatcherServlet {RMI TCP Connection(4)-192.168.0.192} Completed initialization in 5 ms
+2022-07-07 14:47:06,423 [INFO] o.m.d.connection {RMI TCP Connection(5)-192.168.0.192} Opened connection [connectionId{localValue:2, serverValue:7}] to localhost:27017
+2022-07-07 14:48:04,666 [INFO] o.m.d.connection {MaintenanceTimer-1-thread-1} Closed connection [connectionId{localValue:2, serverValue:7}] to localhost:27017 because it is past its maximum allowed idle time.
+2022-07-07 14:49:26,488 [INFO] o.s.s.c.ThreadPoolTaskExecutor {Thread-10} Shutting down ExecutorService 'applicationTaskExecutor'
+2022-07-07 14:49:32,632 [INFO] c.t.TweetAppApiApplication {restartedMain} Starting TweetAppApiApplication on DESKTOP-0GESMLH with PID 4616 (started by 888245 in C:\Users\888245\git\FINAL VERSION TWEETAPP\tweet_app_api_service)
+2022-07-07 14:49:32,638 [DEBUG] c.t.TweetAppApiApplication {restartedMain} Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
+2022-07-07 14:49:32,638 [INFO] c.t.TweetAppApiApplication {restartedMain} No active profile set, falling back to default profiles: default
+2022-07-07 14:49:32,667 [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor {restartedMain} Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-07-07 14:49:32,667 [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor {restartedMain} For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-07-07 14:49:33,403 [INFO] o.s.d.r.c.RepositoryConfigurationDelegate {restartedMain} Bootstrapping Spring Data repositories in DEFAULT mode.
+2022-07-07 14:49:33,464 [INFO] o.s.d.r.c.RepositoryConfigurationDelegate {restartedMain} Finished Spring Data repository scanning in 57ms. Found 2 repository interfaces.
+2022-07-07 14:49:33,911 [INFO] o.s.b.w.e.t.TomcatWebServer {restartedMain} Tomcat initialized with port(s): 8682 (http)
+2022-07-07 14:49:33,932 [INFO] o.a.c.c.StandardService {restartedMain} Starting service [Tomcat]
+2022-07-07 14:49:33,932 [INFO] o.a.c.c.StandardEngine {restartedMain} Starting Servlet engine: [Apache Tomcat/9.0.14]
+2022-07-07 14:49:33,938 [INFO] o.a.c.c.AprLifecycleListener {restartedMain} The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Eclipse Foundation\jdk-11.0.12.7-hotspot\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Python310\Scripts\;C:\Python310\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\WindowsPowerShell\Scripts;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Java\jdk1.8.0_261\bin;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\webdrivers;C:\Program Files\Java\jdk1.8.0_261\bin;C:\Users\888245\AppData\Local\Programs\Git\cmd;C:\Program Files\IntelliJ IDEA Community Edition 2021.1.3\bin;;C:\Users\888245\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\888245\AppData\Roaming\npm;.]
+2022-07-07 14:49:34,036 [INFO] o.a.c.c.C.[.[.[.0] {restartedMain} Initializing Spring embedded WebApplicationContext
+2022-07-07 14:49:34,036 [INFO] o.s.w.c.ContextLoader {restartedMain} Root WebApplicationContext: initialization completed in 1369 ms
+2022-07-07 14:49:34,201 [DEBUG] c.t.c.m.MongoDbConfig {restartedMain} Initializing MongoDB uri: mongodb://localhost:27017
+2022-07-07 14:49:34,345 [INFO] o.m.d.cluster {restartedMain} Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2022-07-07 14:49:34,368 [INFO] c.t.c.m.MongoDbConfig {restartedMain} Database Name: 'tweet_app'
+2022-07-07 14:49:34,386 [INFO] o.m.d.connection {cluster-ClusterId{value='62c6a526391e940b71e48690', description='null'}-localhost:27017} Opened connection [connectionId{localValue:1, serverValue:8}] to localhost:27017
+2022-07-07 14:49:34,391 [INFO] o.m.d.cluster {cluster-ClusterId{value='62c6a526391e940b71e48690', description='null'}-localhost:27017} Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 0, 23]}, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2334900}
+2022-07-07 14:49:34,693 [INFO] o.s.b.d.a.OptionalLiveReloadServer {restartedMain} LiveReload server is running on port 35729
+2022-07-07 14:49:34,917 [INFO] o.s.s.w.DefaultSecurityFilterChain {restartedMain} Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1fbc547d, org.springframework.security.web.context.SecurityContextPersistenceFilter@46029f18, org.springframework.security.web.header.HeaderWriterFilter@783cb45a, org.springframework.security.web.authentication.logout.LogoutFilter@1fccb3b4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@478d70cc, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@e8086a9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@15e1e049, org.springframework.security.web.session.SessionManagementFilter@6a5a1dd3, org.springframework.security.web.access.ExceptionTranslationFilter@6f255153, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2da67d2a]
+2022-07-07 14:49:35,026 [INFO] o.s.s.c.ThreadPoolTaskExecutor {restartedMain} Initializing ExecutorService 'applicationTaskExecutor'
+2022-07-07 14:49:35,191 [INFO] o.s.b.a.e.w.EndpointLinksResolver {restartedMain} Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-07-07 14:49:35,274 [INFO] o.s.b.w.e.t.TomcatWebServer {restartedMain} Tomcat started on port(s): 8682 (http) with context path '/api/v1.0'
+2022-07-07 14:49:35,276 [INFO] c.t.TweetAppApiApplication {restartedMain} Started TweetAppApiApplication in 2.962 seconds (JVM running for 3.984)
+2022-07-07 14:49:35,373 [INFO] o.a.c.c.C.[.[.[.0] {http-nio-8682-exec-1} Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-07 14:49:35,374 [INFO] o.s.w.s.DispatcherServlet {http-nio-8682-exec-1} Initializing Servlet 'dispatcherServlet'
+2022-07-07 14:49:35,380 [INFO] o.s.w.s.DispatcherServlet {http-nio-8682-exec-1} Completed initialization in 6 ms
+2022-07-07 14:49:36,328 [INFO] o.m.d.connection {RMI TCP Connection(2)-192.168.0.192} Opened connection [connectionId{localValue:2, serverValue:9}] to localhost:27017
+2022-07-07 14:50:34,373 [INFO] o.m.d.connection {MaintenanceTimer-1-thread-1} Closed connection [connectionId{localValue:2, serverValue:9}] to localhost:27017 because it is past its maximum allowed idle time.
+2022-07-07 14:51:26,182 [INFO] o.s.s.c.ThreadPoolTaskExecutor {Thread-10} Shutting down ExecutorService 'applicationTaskExecutor'
+2022-07-07 14:51:37,494 [INFO] c.t.TweetAppApiApplication {restartedMain} Starting TweetAppApiApplication on DESKTOP-0GESMLH with PID 25116 (started by 888245 in C:\Users\888245\git\FINAL VERSION TWEETAPP\tweet_app_api_service)
+2022-07-07 14:51:37,498 [DEBUG] c.t.TweetAppApiApplication {restartedMain} Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
+2022-07-07 14:51:37,499 [INFO] c.t.TweetAppApiApplication {restartedMain} No active profile set, falling back to default profiles: default
+2022-07-07 14:51:37,525 [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor {restartedMain} Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-07-07 14:51:37,525 [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor {restartedMain} For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-07-07 14:51:38,394 [INFO] o.s.d.r.c.RepositoryConfigurationDelegate {restartedMain} Bootstrapping Spring Data repositories in DEFAULT mode.
+2022-07-07 14:51:38,477 [INFO] o.s.d.r.c.RepositoryConfigurationDelegate {restartedMain} Finished Spring Data repository scanning in 78ms. Found 2 repository interfaces.
+2022-07-07 14:51:38,997 [INFO] o.s.b.w.e.t.TomcatWebServer {restartedMain} Tomcat initialized with port(s): 8682 (http)
+2022-07-07 14:51:39,019 [INFO] o.a.c.c.StandardService {restartedMain} Starting service [Tomcat]
+2022-07-07 14:51:39,020 [INFO] o.a.c.c.StandardEngine {restartedMain} Starting Servlet engine: [Apache Tomcat/9.0.14]
+2022-07-07 14:51:39,026 [INFO] o.a.c.c.AprLifecycleListener {restartedMain} The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Eclipse Foundation\jdk-11.0.12.7-hotspot\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Python310\Scripts\;C:\Python310\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\WindowsPowerShell\Scripts;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Java\jdk1.8.0_261\bin;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\webdrivers;C:\Program Files\Java\jdk1.8.0_261\bin;C:\Users\888245\AppData\Local\Programs\Git\cmd;C:\Program Files\IntelliJ IDEA Community Edition 2021.1.3\bin;;C:\Users\888245\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\888245\AppData\Roaming\npm;.]
+2022-07-07 14:51:39,126 [INFO] o.a.c.c.C.[.[.[.0] {restartedMain} Initializing Spring embedded WebApplicationContext
+2022-07-07 14:51:39,126 [INFO] o.s.w.c.ContextLoader {restartedMain} Root WebApplicationContext: initialization completed in 1601 ms
+2022-07-07 14:51:39,313 [DEBUG] c.t.c.m.MongoDbConfig {restartedMain} Initializing MongoDB uri: mongodb://localhost:27017
+2022-07-07 14:51:39,438 [INFO] o.m.d.cluster {restartedMain} Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2022-07-07 14:51:39,459 [INFO] c.t.c.m.MongoDbConfig {restartedMain} Database Name: 'tweet_app'
+2022-07-07 14:51:39,482 [INFO] o.m.d.connection {cluster-ClusterId{value='62c6a5a32fa2f40c71ae99d9', description='null'}-localhost:27017} Opened connection [connectionId{localValue:1, serverValue:10}] to localhost:27017
+2022-07-07 14:51:39,486 [INFO] o.m.d.cluster {cluster-ClusterId{value='62c6a5a32fa2f40c71ae99d9', description='null'}-localhost:27017} Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 0, 23]}, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2061100}
+2022-07-07 14:51:39,622 [INFO] o.s.b.d.a.OptionalLiveReloadServer {restartedMain} LiveReload server is running on port 35729
+2022-07-07 14:51:39,889 [INFO] o.s.s.w.DefaultSecurityFilterChain {restartedMain} Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3c2d87e9, org.springframework.security.web.context.SecurityContextPersistenceFilter@6fcce72c, org.springframework.security.web.header.HeaderWriterFilter@4425b733, org.springframework.security.web.authentication.logout.LogoutFilter@2d96c4ea, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4216cc8b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6ee944a1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@26a765a1, org.springframework.security.web.session.SessionManagementFilter@79a7cc5e, org.springframework.security.web.access.ExceptionTranslationFilter@20958e3c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@35a3c622]
+2022-07-07 14:51:40,019 [INFO] o.s.s.c.ThreadPoolTaskExecutor {restartedMain} Initializing ExecutorService 'applicationTaskExecutor'
+2022-07-07 14:51:40,405 [INFO] o.s.b.w.e.t.TomcatWebServer {restartedMain} Tomcat initialized with port(s): 9099 (http)
+2022-07-07 14:51:40,406 [INFO] o.a.c.c.StandardService {restartedMain} Starting service [Tomcat]
+2022-07-07 14:51:40,406 [INFO] o.a.c.c.StandardEngine {restartedMain} Starting Servlet engine: [Apache Tomcat/9.0.14]
+2022-07-07 14:51:40,437 [INFO] o.a.c.c.C.[.[.[/] {restartedMain} Initializing Spring embedded WebApplicationContext
+2022-07-07 14:51:40,437 [INFO] o.s.w.c.ContextLoader {restartedMain} Root WebApplicationContext: initialization completed in 112 ms
+2022-07-07 14:51:40,454 [INFO] o.s.b.a.e.w.EndpointLinksResolver {restartedMain} Exposing 18 endpoint(s) beneath base path '/insights'
+2022-07-07 14:51:40,506 [INFO] o.s.b.w.e.t.TomcatWebServer {restartedMain} Tomcat started on port(s): 9099 (http) with context path ''
+2022-07-07 14:51:40,518 [INFO] o.s.b.w.e.t.TomcatWebServer {restartedMain} Tomcat started on port(s): 8682 (http) with context path '/api/v1.0'
+2022-07-07 14:51:40,519 [INFO] c.t.TweetAppApiApplication {restartedMain} Started TweetAppApiApplication in 3.334 seconds (JVM running for 4.375)
+2022-07-07 14:51:41,324 [INFO] o.a.c.c.C.[.[.[.0] {RMI TCP Connection(1)-192.168.0.192} Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-07 14:51:41,324 [INFO] o.s.w.s.DispatcherServlet {RMI TCP Connection(1)-192.168.0.192} Initializing Servlet 'dispatcherServlet'
+2022-07-07 14:51:41,329 [INFO] o.s.w.s.DispatcherServlet {RMI TCP Connection(1)-192.168.0.192} Completed initialization in 5 ms
+2022-07-07 14:51:41,349 [INFO] o.m.d.connection {RMI TCP Connection(2)-192.168.0.192} Opened connection [connectionId{localValue:2, serverValue:11}] to localhost:27017
+2022-07-07 14:52:07,189 [INFO] o.s.s.c.ThreadPoolTaskExecutor {Thread-11} Shutting down ExecutorService 'applicationTaskExecutor'
+2022-07-07 14:52:13,073 [INFO] c.t.TweetAppApiApplication {restartedMain} Starting TweetAppApiApplication on DESKTOP-0GESMLH with PID 23808 (started by 888245 in C:\Users\888245\git\FINAL VERSION TWEETAPP\tweet_app_api_service)
+2022-07-07 14:52:13,076 [DEBUG] c.t.TweetAppApiApplication {restartedMain} Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
+2022-07-07 14:52:13,077 [INFO] c.t.TweetAppApiApplication {restartedMain} No active profile set, falling back to default profiles: default
+2022-07-07 14:52:13,101 [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor {restartedMain} Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-07-07 14:52:13,101 [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor {restartedMain} For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-07-07 14:52:13,813 [INFO] o.s.d.r.c.RepositoryConfigurationDelegate {restartedMain} Bootstrapping Spring Data repositories in DEFAULT mode.
+2022-07-07 14:52:13,875 [INFO] o.s.d.r.c.RepositoryConfigurationDelegate {restartedMain} Finished Spring Data repository scanning in 59ms. Found 2 repository interfaces.
+2022-07-07 14:52:14,347 [INFO] o.s.b.w.e.t.TomcatWebServer {restartedMain} Tomcat initialized with port(s): 8682 (http)
+2022-07-07 14:52:14,365 [INFO] o.a.c.c.StandardService {restartedMain} Starting service [Tomcat]
+2022-07-07 14:52:14,365 [INFO] o.a.c.c.StandardEngine {restartedMain} Starting Servlet engine: [Apache Tomcat/9.0.14]
+2022-07-07 14:52:14,371 [INFO] o.a.c.c.AprLifecycleListener {restartedMain} The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Eclipse Foundation\jdk-11.0.12.7-hotspot\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Python310\Scripts\;C:\Python310\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\WindowsPowerShell\Scripts;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Java\jdk1.8.0_261\bin;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\webdrivers;C:\Program Files\Java\jdk1.8.0_261\bin;C:\Users\888245\AppData\Local\Programs\Git\cmd;C:\Program Files\IntelliJ IDEA Community Edition 2021.1.3\bin;;C:\Users\888245\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\888245\AppData\Roaming\npm;.]
+2022-07-07 14:52:14,456 [INFO] o.a.c.c.C.[.[.[/insights] {restartedMain} Initializing Spring embedded WebApplicationContext
+2022-07-07 14:52:14,457 [INFO] o.s.w.c.ContextLoader {restartedMain} Root WebApplicationContext: initialization completed in 1356 ms
+2022-07-07 14:52:14,619 [DEBUG] c.t.c.m.MongoDbConfig {restartedMain} Initializing MongoDB uri: mongodb://localhost:27017
+2022-07-07 14:52:14,753 [INFO] o.m.d.cluster {restartedMain} Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2022-07-07 14:52:14,776 [INFO] c.t.c.m.MongoDbConfig {restartedMain} Database Name: 'tweet_app'
+2022-07-07 14:52:14,795 [INFO] o.m.d.connection {cluster-ClusterId{value='62c6a5c69a6810597fc0ee77', description='null'}-localhost:27017} Opened connection [connectionId{localValue:1, serverValue:12}] to localhost:27017
+2022-07-07 14:52:14,799 [INFO] o.m.d.cluster {cluster-ClusterId{value='62c6a5c69a6810597fc0ee77', description='null'}-localhost:27017} Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 0, 23]}, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2383900}
+2022-07-07 14:52:14,947 [INFO] o.s.b.d.a.OptionalLiveReloadServer {restartedMain} LiveReload server is running on port 35729
+2022-07-07 14:52:15,195 [INFO] o.s.s.w.DefaultSecurityFilterChain {restartedMain} Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@516f86b7, org.springframework.security.web.context.SecurityContextPersistenceFilter@1047dd68, org.springframework.security.web.header.HeaderWriterFilter@6a8eaf5, org.springframework.security.web.authentication.logout.LogoutFilter@1c25bbbc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@501441b1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@50588cd3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@60be08f5, org.springframework.security.web.session.SessionManagementFilter@12bcff37, org.springframework.security.web.access.ExceptionTranslationFilter@2470ab91, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1967086b]
+2022-07-07 14:52:15,312 [INFO] o.s.s.c.ThreadPoolTaskExecutor {restartedMain} Initializing ExecutorService 'applicationTaskExecutor'
+2022-07-07 14:52:15,719 [INFO] o.s.b.w.e.t.TomcatWebServer {restartedMain} Tomcat initialized with port(s): 9099 (http)
+2022-07-07 14:52:15,720 [INFO] o.a.c.c.StandardService {restartedMain} Starting service [Tomcat]
+2022-07-07 14:52:15,720 [INFO] o.a.c.c.StandardEngine {restartedMain} Starting Servlet engine: [Apache Tomcat/9.0.14]
+2022-07-07 14:52:15,753 [INFO] o.a.c.c.C.[.[.[/] {restartedMain} Initializing Spring embedded WebApplicationContext
+2022-07-07 14:52:15,753 [INFO] o.s.w.c.ContextLoader {restartedMain} Root WebApplicationContext: initialization completed in 118 ms
+2022-07-07 14:52:15,770 [INFO] o.s.b.a.e.w.EndpointLinksResolver {restartedMain} Exposing 18 endpoint(s) beneath base path '/insights'
+2022-07-07 14:52:15,831 [INFO] o.s.b.w.e.t.TomcatWebServer {restartedMain} Tomcat started on port(s): 9099 (http) with context path ''
+2022-07-07 14:52:15,843 [INFO] o.s.b.w.e.t.TomcatWebServer {restartedMain} Tomcat started on port(s): 8682 (http) with context path '/insights'
+2022-07-07 14:52:15,844 [INFO] c.t.TweetAppApiApplication {restartedMain} Started TweetAppApiApplication in 3.072 seconds (JVM running for 4.078)
+2022-07-07 14:52:16,563 [INFO] o.a.c.c.C.[.[.[/insights] {RMI TCP Connection(2)-192.168.0.192} Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-07 14:52:16,564 [INFO] o.s.w.s.DispatcherServlet {RMI TCP Connection(2)-192.168.0.192} Initializing Servlet 'dispatcherServlet'
+2022-07-07 14:52:16,569 [INFO] o.s.w.s.DispatcherServlet {RMI TCP Connection(2)-192.168.0.192} Completed initialization in 5 ms
+2022-07-07 14:52:16,591 [INFO] o.m.d.connection {RMI TCP Connection(3)-192.168.0.192} Opened connection [connectionId{localValue:2, serverValue:13}] to localhost:27017
+2022-07-07 14:53:14,767 [INFO] o.m.d.connection {MaintenanceTimer-1-thread-1} Closed connection [connectionId{localValue:2, serverValue:13}] to localhost:27017 because it is past its maximum allowed idle time.
+2022-07-07 14:54:53,767 [INFO] o.s.s.c.ThreadPoolTaskExecutor {Thread-9} Shutting down ExecutorService 'applicationTaskExecutor'
+2022-07-07 14:55:02,048 [INFO] c.t.TweetAppApiApplication {restartedMain} Starting TweetAppApiApplication on DESKTOP-0GESMLH with PID 28480 (started by 888245 in C:\Users\888245\git\FINAL VERSION TWEETAPP\tweet_app_api_service)
+2022-07-07 14:55:02,053 [DEBUG] c.t.TweetAppApiApplication {restartedMain} Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
+2022-07-07 14:55:02,053 [INFO] c.t.TweetAppApiApplication {restartedMain} No active profile set, falling back to default profiles: default
+2022-07-07 14:55:02,087 [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor {restartedMain} Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-07-07 14:55:02,087 [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor {restartedMain} For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-07-07 14:55:02,870 [INFO] o.s.d.r.c.RepositoryConfigurationDelegate {restartedMain} Bootstrapping Spring Data repositories in DEFAULT mode.
+2022-07-07 14:55:02,933 [INFO] o.s.d.r.c.RepositoryConfigurationDelegate {restartedMain} Finished Spring Data repository scanning in 59ms. Found 2 repository interfaces.
+2022-07-07 14:55:03,395 [INFO] o.s.b.w.e.t.TomcatWebServer {restartedMain} Tomcat initialized with port(s): 8682 (http)
+2022-07-07 14:55:03,416 [INFO] o.a.c.c.StandardService {restartedMain} Starting service [Tomcat]
+2022-07-07 14:55:03,416 [INFO] o.a.c.c.StandardEngine {restartedMain} Starting Servlet engine: [Apache Tomcat/9.0.14]
+2022-07-07 14:55:03,423 [INFO] o.a.c.c.AprLifecycleListener {restartedMain} The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Eclipse Foundation\jdk-11.0.12.7-hotspot\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Python310\Scripts\;C:\Python310\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\WindowsPowerShell\Scripts;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Java\jdk1.8.0_261\bin;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\webdrivers;C:\Program Files\Java\jdk1.8.0_261\bin;C:\Users\888245\AppData\Local\Programs\Git\cmd;C:\Program Files\IntelliJ IDEA Community Edition 2021.1.3\bin;;C:\Users\888245\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\888245\AppData\Roaming\npm;.]
+2022-07-07 14:55:03,524 [INFO] o.a.c.c.C.[.[.[/insights] {restartedMain} Initializing Spring embedded WebApplicationContext
+2022-07-07 14:55:03,524 [INFO] o.s.w.c.ContextLoader {restartedMain} Root WebApplicationContext: initialization completed in 1437 ms
+2022-07-07 14:55:03,718 [DEBUG] c.t.c.m.MongoDbConfig {restartedMain} Initializing MongoDB uri: mongodb://localhost:27017
+2022-07-07 14:55:03,851 [INFO] o.m.d.cluster {restartedMain} Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2022-07-07 14:55:03,876 [INFO] c.t.c.m.MongoDbConfig {restartedMain} Database Name: 'tweet_app'
+2022-07-07 14:55:03,897 [INFO] o.m.d.connection {cluster-ClusterId{value='62c6a66f5c490050ed1a86ad', description='null'}-localhost:27017} Opened connection [connectionId{localValue:1, serverValue:14}] to localhost:27017
+2022-07-07 14:55:03,902 [INFO] o.m.d.cluster {cluster-ClusterId{value='62c6a66f5c490050ed1a86ad', description='null'}-localhost:27017} Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 0, 23]}, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2620100}
+2022-07-07 14:55:04,047 [INFO] o.s.b.d.a.OptionalLiveReloadServer {restartedMain} LiveReload server is running on port 35729
+2022-07-07 14:55:04,319 [INFO] o.s.s.w.DefaultSecurityFilterChain {restartedMain} Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6ce442d, org.springframework.security.web.context.SecurityContextPersistenceFilter@753865c4, org.springframework.security.web.header.HeaderWriterFilter@1c32f1f3, org.springframework.security.web.authentication.logout.LogoutFilter@5245884d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@63d1d79, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1068a630, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@b48f35e, org.springframework.security.web.session.SessionManagementFilter@26a03e18, org.springframework.security.web.access.ExceptionTranslationFilter@6139c312, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@49fcdd74]
+2022-07-07 14:55:04,438 [INFO] o.s.s.c.ThreadPoolTaskExecutor {restartedMain} Initializing ExecutorService 'applicationTaskExecutor'
+2022-07-07 14:55:04,841 [INFO] o.s.b.w.e.t.TomcatWebServer {restartedMain} Tomcat initialized with port(s): 9099 (http)
+2022-07-07 14:55:04,842 [INFO] o.a.c.c.StandardService {restartedMain} Starting service [Tomcat]
+2022-07-07 14:55:04,842 [INFO] o.a.c.c.StandardEngine {restartedMain} Starting Servlet engine: [Apache Tomcat/9.0.14]
+2022-07-07 14:55:04,875 [INFO] o.a.c.c.C.[.[.[/] {restartedMain} Initializing Spring embedded WebApplicationContext
+2022-07-07 14:55:04,875 [INFO] o.s.w.c.ContextLoader {restartedMain} Root WebApplicationContext: initialization completed in 117 ms
+2022-07-07 14:55:04,900 [INFO] o.s.b.a.e.w.EndpointLinksResolver {restartedMain} Exposing 18 endpoint(s) beneath base path '/insights'
+2022-07-07 14:55:04,983 [INFO] o.s.b.w.e.t.TomcatWebServer {restartedMain} Tomcat started on port(s): 9099 (http) with context path ''
+2022-07-07 14:55:04,996 [INFO] o.s.b.w.e.t.TomcatWebServer {restartedMain} Tomcat started on port(s): 8682 (http) with context path '/insights'
+2022-07-07 14:55:04,997 [INFO] c.t.TweetAppApiApplication {restartedMain} Started TweetAppApiApplication in 3.283 seconds (JVM running for 4.322)
+2022-07-07 14:55:05,073 [INFO] o.a.c.c.C.[.[.[/insights] {http-nio-8682-exec-1} Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-07 14:55:05,074 [INFO] o.s.w.s.DispatcherServlet {http-nio-8682-exec-1} Initializing Servlet 'dispatcherServlet'
+2022-07-07 14:55:05,081 [INFO] o.s.w.s.DispatcherServlet {http-nio-8682-exec-1} Completed initialization in 7 ms
+2022-07-07 14:55:05,473 [INFO] o.m.d.connection {RMI TCP Connection(2)-192.168.0.192} Opened connection [connectionId{localValue:2, serverValue:15}] to localhost:27017
+2022-07-07 14:55:48,459 [INFO] o.s.s.c.ThreadPoolTaskExecutor {Thread-11} Shutting down ExecutorService 'applicationTaskExecutor'
+2022-07-07 14:56:25,274 [INFO] c.t.TweetAppApiApplication {restartedMain} Starting TweetAppApiApplication on DESKTOP-0GESMLH with PID 26084 (started by 888245 in C:\Users\888245\git\FINAL VERSION TWEETAPP\tweet_app_api_service)
+2022-07-07 14:56:25,281 [DEBUG] c.t.TweetAppApiApplication {restartedMain} Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
+2022-07-07 14:56:25,281 [INFO] c.t.TweetAppApiApplication {restartedMain} No active profile set, falling back to default profiles: default
+2022-07-07 14:56:25,337 [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor {restartedMain} Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-07-07 14:56:25,337 [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor {restartedMain} For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-07-07 14:56:26,274 [INFO] o.s.d.r.c.RepositoryConfigurationDelegate {restartedMain} Bootstrapping Spring Data repositories in DEFAULT mode.
+2022-07-07 14:56:26,335 [INFO] o.s.d.r.c.RepositoryConfigurationDelegate {restartedMain} Finished Spring Data repository scanning in 57ms. Found 2 repository interfaces.
+2022-07-07 14:56:26,802 [INFO] o.s.b.w.e.t.TomcatWebServer {restartedMain} Tomcat initialized with port(s): 8682 (http)
+2022-07-07 14:56:26,821 [INFO] o.a.c.c.StandardService {restartedMain} Starting service [Tomcat]
+2022-07-07 14:56:26,822 [INFO] o.a.c.c.StandardEngine {restartedMain} Starting Servlet engine: [Apache Tomcat/9.0.14]
+2022-07-07 14:56:26,827 [INFO] o.a.c.c.AprLifecycleListener {restartedMain} The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Eclipse Foundation\jdk-11.0.12.7-hotspot\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Python310\Scripts\;C:\Python310\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\WindowsPowerShell\Scripts;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Java\jdk1.8.0_261\bin;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\webdrivers;C:\Program Files\Java\jdk1.8.0_261\bin;C:\Users\888245\AppData\Local\Programs\Git\cmd;C:\Program Files\IntelliJ IDEA Community Edition 2021.1.3\bin;;C:\Users\888245\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\888245\AppData\Roaming\npm;.]
+2022-07-07 14:56:26,919 [INFO] o.a.c.c.C.[.[.[.0] {restartedMain} Initializing Spring embedded WebApplicationContext
+2022-07-07 14:56:26,919 [INFO] o.s.w.c.ContextLoader {restartedMain} Root WebApplicationContext: initialization completed in 1582 ms
+2022-07-07 14:56:27,114 [DEBUG] c.t.c.m.MongoDbConfig {restartedMain} Initializing MongoDB uri: mongodb://localhost:27017
+2022-07-07 14:56:27,255 [INFO] o.m.d.cluster {restartedMain} Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2022-07-07 14:56:27,280 [INFO] c.t.c.m.MongoDbConfig {restartedMain} Database Name: 'tweet_app'
+2022-07-07 14:56:27,301 [INFO] o.m.d.connection {cluster-ClusterId{value='62c6a6c35b63626bfaab5772', description='null'}-localhost:27017} Opened connection [connectionId{localValue:1, serverValue:16}] to localhost:27017
+2022-07-07 14:56:27,306 [INFO] o.m.d.cluster {cluster-ClusterId{value='62c6a6c35b63626bfaab5772', description='null'}-localhost:27017} Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 0, 23]}, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2347700}
+2022-07-07 14:56:27,476 [INFO] o.s.b.d.a.OptionalLiveReloadServer {restartedMain} LiveReload server is running on port 35729
+2022-07-07 14:56:27,710 [INFO] o.s.s.w.DefaultSecurityFilterChain {restartedMain} Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3ff8a606, org.springframework.security.web.context.SecurityContextPersistenceFilter@352eec7a, org.springframework.security.web.header.HeaderWriterFilter@36b55847, org.springframework.security.web.authentication.logout.LogoutFilter@5b55899, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@383c1d2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6df63830, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4a33818f, org.springframework.security.web.session.SessionManagementFilter@6479d7a5, org.springframework.security.web.access.ExceptionTranslationFilter@4690a864, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@58b4b39]
+2022-07-07 14:56:27,825 [INFO] o.s.s.c.ThreadPoolTaskExecutor {restartedMain} Initializing ExecutorService 'applicationTaskExecutor'
+2022-07-07 14:56:28,215 [INFO] o.s.b.w.e.t.TomcatWebServer {restartedMain} Tomcat initialized with port(s): 9099 (http)
+2022-07-07 14:56:28,216 [INFO] o.a.c.c.StandardService {restartedMain} Starting service [Tomcat]
+2022-07-07 14:56:28,217 [INFO] o.a.c.c.StandardEngine {restartedMain} Starting Servlet engine: [Apache Tomcat/9.0.14]
+2022-07-07 14:56:28,253 [INFO] o.a.c.c.C.[.[.[/] {restartedMain} Initializing Spring embedded WebApplicationContext
+2022-07-07 14:56:28,253 [INFO] o.s.w.c.ContextLoader {restartedMain} Root WebApplicationContext: initialization completed in 116 ms
+2022-07-07 14:56:28,270 [INFO] o.s.b.a.e.w.EndpointLinksResolver {restartedMain} Exposing 18 endpoint(s) beneath base path '/insights'
+2022-07-07 14:56:28,327 [INFO] o.s.b.w.e.t.TomcatWebServer {restartedMain} Tomcat started on port(s): 9099 (http) with context path ''
+2022-07-07 14:56:28,339 [INFO] o.s.b.w.e.t.TomcatWebServer {restartedMain} Tomcat started on port(s): 8682 (http) with context path '/api/v1.0'
+2022-07-07 14:56:28,340 [INFO] c.t.TweetAppApiApplication {restartedMain} Started TweetAppApiApplication in 3.653 seconds (JVM running for 4.818)
+2022-07-07 14:56:29,139 [INFO] o.a.c.c.C.[.[.[.0] {RMI TCP Connection(2)-192.168.0.192} Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-07 14:56:29,139 [INFO] o.s.w.s.DispatcherServlet {RMI TCP Connection(2)-192.168.0.192} Initializing Servlet 'dispatcherServlet'
+2022-07-07 14:56:29,144 [INFO] o.s.w.s.DispatcherServlet {RMI TCP Connection(2)-192.168.0.192} Completed initialization in 5 ms
+2022-07-07 14:56:29,163 [INFO] o.m.d.connection {RMI TCP Connection(1)-192.168.0.192} Opened connection [connectionId{localValue:2, serverValue:17}] to localhost:27017
+2022-07-07 14:56:58,992 [INFO] o.s.s.c.ThreadPoolTaskExecutor {Thread-11} Shutting down ExecutorService 'applicationTaskExecutor'
+2022-07-07 14:57:22,547 [INFO] c.t.TweetAppApiApplication {restartedMain} Starting TweetAppApiApplication on DESKTOP-0GESMLH with PID 23168 (started by 888245 in C:\Users\888245\git\FINAL VERSION TWEETAPP\tweet_app_api_service)
+2022-07-07 14:57:22,552 [DEBUG] c.t.TweetAppApiApplication {restartedMain} Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
+2022-07-07 14:57:22,553 [INFO] c.t.TweetAppApiApplication {restartedMain} No active profile set, falling back to default profiles: default
+2022-07-07 14:57:22,584 [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor {restartedMain} Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-07-07 14:57:22,584 [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor {restartedMain} For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-07-07 14:57:23,655 [INFO] o.s.d.r.c.RepositoryConfigurationDelegate {restartedMain} Bootstrapping Spring Data repositories in DEFAULT mode.
+2022-07-07 14:57:23,714 [INFO] o.s.d.r.c.RepositoryConfigurationDelegate {restartedMain} Finished Spring Data repository scanning in 56ms. Found 2 repository interfaces.
+2022-07-07 14:57:24,182 [INFO] o.s.b.w.e.t.TomcatWebServer {restartedMain} Tomcat initialized with port(s): 8682 (http)
+2022-07-07 14:57:24,205 [INFO] o.a.c.c.StandardService {restartedMain} Starting service [Tomcat]
+2022-07-07 14:57:24,206 [INFO] o.a.c.c.StandardEngine {restartedMain} Starting Servlet engine: [Apache Tomcat/9.0.14]
+2022-07-07 14:57:24,212 [INFO] o.a.c.c.AprLifecycleListener {restartedMain} The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Eclipse Foundation\jdk-11.0.12.7-hotspot\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Python310\Scripts\;C:\Python310\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\WindowsPowerShell\Scripts;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Java\jdk1.8.0_261\bin;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\webdrivers;C:\Program Files\Java\jdk1.8.0_261\bin;C:\Users\888245\AppData\Local\Programs\Git\cmd;C:\Program Files\IntelliJ IDEA Community Edition 2021.1.3\bin;;C:\Users\888245\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\888245\AppData\Roaming\npm;.]
+2022-07-07 14:57:24,308 [INFO] o.a.c.c.C.[.[.[.0] {restartedMain} Initializing Spring embedded WebApplicationContext
+2022-07-07 14:57:24,309 [INFO] o.s.w.c.ContextLoader {restartedMain} Root WebApplicationContext: initialization completed in 1725 ms
+2022-07-07 14:57:24,498 [DEBUG] c.t.c.m.MongoDbConfig {restartedMain} Initializing MongoDB uri: mongodb://localhost:27017
+2022-07-07 14:57:24,628 [INFO] o.m.d.cluster {restartedMain} Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2022-07-07 14:57:24,649 [INFO] c.t.c.m.MongoDbConfig {restartedMain} Database Name: 'tweet_app'
+2022-07-07 14:57:24,667 [INFO] o.m.d.connection {cluster-ClusterId{value='62c6a6fc97a7256c856cb9ad', description='null'}-localhost:27017} Opened connection [connectionId{localValue:1, serverValue:18}] to localhost:27017
+2022-07-07 14:57:24,671 [INFO] o.m.d.cluster {cluster-ClusterId{value='62c6a6fc97a7256c856cb9ad', description='null'}-localhost:27017} Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 0, 23]}, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1880500}
+2022-07-07 14:57:24,810 [INFO] o.s.b.d.a.OptionalLiveReloadServer {restartedMain} LiveReload server is running on port 35729
+2022-07-07 14:57:25,314 [INFO] o.s.s.w.DefaultSecurityFilterChain {restartedMain} Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6f8840d3, org.springframework.security.web.context.SecurityContextPersistenceFilter@46de61af, org.springframework.security.web.header.HeaderWriterFilter@3f3b5302, org.springframework.security.web.authentication.logout.LogoutFilter@51d587db, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@54ce4557, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4d13b7fe, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@22a4030b, org.springframework.security.web.session.SessionManagementFilter@7b73ed40, org.springframework.security.web.access.ExceptionTranslationFilter@12d1bf51, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3b556365]
+2022-07-07 14:57:25,332 [INFO] s.d.s.w.PropertySourcedRequestMappingHandlerMapping {restartedMain} Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2022-07-07 14:57:25,421 [INFO] o.s.s.c.ThreadPoolTaskExecutor {restartedMain} Initializing ExecutorService 'applicationTaskExecutor'
+2022-07-07 14:57:25,835 [INFO] o.s.b.w.e.t.TomcatWebServer {restartedMain} Tomcat initialized with port(s): 9099 (http)
+2022-07-07 14:57:25,836 [INFO] o.a.c.c.StandardService {restartedMain} Starting service [Tomcat]
+2022-07-07 14:57:25,836 [INFO] o.a.c.c.StandardEngine {restartedMain} Starting Servlet engine: [Apache Tomcat/9.0.14]
+2022-07-07 14:57:25,868 [INFO] o.a.c.c.C.[.[.[/] {restartedMain} Initializing Spring embedded WebApplicationContext
+2022-07-07 14:57:25,868 [INFO] o.s.w.c.ContextLoader {restartedMain} Root WebApplicationContext: initialization completed in 117 ms
+2022-07-07 14:57:25,884 [INFO] o.s.b.a.e.w.EndpointLinksResolver {restartedMain} Exposing 18 endpoint(s) beneath base path '/insights'
+2022-07-07 14:57:25,942 [INFO] o.s.b.w.e.t.TomcatWebServer {restartedMain} Tomcat started on port(s): 9099 (http) with context path ''
+2022-07-07 14:57:25,945 [INFO] s.d.s.w.p.DocumentationPluginsBootstrapper {restartedMain} Context refreshed
+2022-07-07 14:57:25,962 [INFO] s.d.s.w.p.DocumentationPluginsBootstrapper {restartedMain} Found 1 custom documentation plugin(s)
+2022-07-07 14:57:25,992 [INFO] s.d.s.w.s.ApiListingReferenceScanner {restartedMain} Scanning for api listing references
+2022-07-07 14:57:26,136 [INFO] o.s.b.w.e.t.TomcatWebServer {restartedMain} Tomcat started on port(s): 8682 (http) with context path '/api/v1.0'
+2022-07-07 14:57:26,137 [INFO] c.t.TweetAppApiApplication {restartedMain} Started TweetAppApiApplication in 3.927 seconds (JVM running for 4.958)
+2022-07-07 14:57:26,708 [INFO] o.m.d.connection {RMI TCP Connection(1)-192.168.0.192} Opened connection [connectionId{localValue:2, serverValue:19}] to localhost:27017
+2022-07-07 14:57:27,160 [INFO] o.a.c.c.C.[.[.[.0] {RMI TCP Connection(3)-192.168.0.192} Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-07 14:57:27,160 [INFO] o.s.w.s.DispatcherServlet {RMI TCP Connection(3)-192.168.0.192} Initializing Servlet 'dispatcherServlet'
+2022-07-07 14:57:27,165 [INFO] o.s.w.s.DispatcherServlet {RMI TCP Connection(3)-192.168.0.192} Completed initialization in 5 ms
+2022-07-07 14:58:10,277 [INFO] o.s.s.c.ThreadPoolTaskExecutor {Thread-11} Shutting down ExecutorService 'applicationTaskExecutor'
+2022-07-07 14:58:22,728 [INFO] c.t.TweetAppApiApplication {restartedMain} Starting TweetAppApiApplication on DESKTOP-0GESMLH with PID 15160 (started by 888245 in C:\Users\888245\git\FINAL VERSION TWEETAPP\tweet_app_api_service)
+2022-07-07 14:58:22,732 [DEBUG] c.t.TweetAppApiApplication {restartedMain} Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
+2022-07-07 14:58:22,733 [INFO] c.t.TweetAppApiApplication {restartedMain} No active profile set, falling back to default profiles: default
+2022-07-07 14:58:22,762 [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor {restartedMain} Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-07-07 14:58:22,762 [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor {restartedMain} For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-07-07 14:58:23,768 [INFO] o.s.d.r.c.RepositoryConfigurationDelegate {restartedMain} Bootstrapping Spring Data repositories in DEFAULT mode.
+2022-07-07 14:58:23,827 [INFO] o.s.d.r.c.RepositoryConfigurationDelegate {restartedMain} Finished Spring Data repository scanning in 56ms. Found 2 repository interfaces.
+2022-07-07 14:58:24,319 [INFO] o.s.b.w.e.t.TomcatWebServer {restartedMain} Tomcat initialized with port(s): 8682 (http)
+2022-07-07 14:58:24,340 [INFO] o.a.c.c.StandardService {restartedMain} Starting service [Tomcat]
+2022-07-07 14:58:24,340 [INFO] o.a.c.c.StandardEngine {restartedMain} Starting Servlet engine: [Apache Tomcat/9.0.14]
+2022-07-07 14:58:24,346 [INFO] o.a.c.c.AprLifecycleListener {restartedMain} The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Eclipse Foundation\jdk-11.0.12.7-hotspot\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Python310\Scripts\;C:\Python310\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\WindowsPowerShell\Scripts;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Java\jdk1.8.0_261\bin;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\webdrivers;C:\Program Files\Java\jdk1.8.0_261\bin;C:\Users\888245\AppData\Local\Programs\Git\cmd;C:\Program Files\IntelliJ IDEA Community Edition 2021.1.3\bin;;C:\Users\888245\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\888245\AppData\Roaming\npm;.]
+2022-07-07 14:58:24,443 [INFO] o.a.c.c.C.[.[.[.0] {restartedMain} Initializing Spring embedded WebApplicationContext
+2022-07-07 14:58:24,443 [INFO] o.s.w.c.ContextLoader {restartedMain} Root WebApplicationContext: initialization completed in 1681 ms
+2022-07-07 14:58:24,619 [DEBUG] c.t.c.m.MongoDbConfig {restartedMain} Initializing MongoDB uri: mongodb://localhost:27017
+2022-07-07 14:58:24,753 [INFO] o.m.d.cluster {restartedMain} Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2022-07-07 14:58:24,775 [INFO] c.t.c.m.MongoDbConfig {restartedMain} Database Name: 'tweet_app'
+2022-07-07 14:58:24,796 [INFO] o.m.d.connection {cluster-ClusterId{value='62c6a738ddc9af0b0aae225f', description='null'}-localhost:27017} Opened connection [connectionId{localValue:1, serverValue:20}] to localhost:27017
+2022-07-07 14:58:24,801 [INFO] o.m.d.cluster {cluster-ClusterId{value='62c6a738ddc9af0b0aae225f', description='null'}-localhost:27017} Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 0, 23]}, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2472800}
+2022-07-07 14:58:24,946 [INFO] o.s.b.d.a.OptionalLiveReloadServer {restartedMain} LiveReload server is running on port 35729
+2022-07-07 14:58:25,424 [INFO] o.s.s.w.DefaultSecurityFilterChain {restartedMain} Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@42fa7453, org.springframework.security.web.context.SecurityContextPersistenceFilter@40be7b87, org.springframework.security.web.header.HeaderWriterFilter@38ce7c7d, org.springframework.security.web.authentication.logout.LogoutFilter@44a3e916, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4661330, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@74f851aa, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6c3cccc9, org.springframework.security.web.session.SessionManagementFilter@60feda69, org.springframework.security.web.access.ExceptionTranslationFilter@2600f6e8, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@27436b65]
+2022-07-07 14:58:25,439 [INFO] s.d.s.w.PropertySourcedRequestMappingHandlerMapping {restartedMain} Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2022-07-07 14:58:25,533 [INFO] o.s.s.c.ThreadPoolTaskExecutor {restartedMain} Initializing ExecutorService 'applicationTaskExecutor'
+2022-07-07 14:58:25,906 [INFO] o.s.b.w.e.t.TomcatWebServer {restartedMain} Tomcat initialized with port(s): 9099 (http)
+2022-07-07 14:58:25,907 [INFO] o.a.c.c.StandardService {restartedMain} Starting service [Tomcat]
+2022-07-07 14:58:25,907 [INFO] o.a.c.c.StandardEngine {restartedMain} Starting Servlet engine: [Apache Tomcat/9.0.14]
+2022-07-07 14:58:25,932 [INFO] o.a.c.c.C.[.[.[/] {restartedMain} Initializing Spring embedded WebApplicationContext
+2022-07-07 14:58:25,932 [INFO] o.s.w.c.ContextLoader {restartedMain} Root WebApplicationContext: initialization completed in 102 ms
+2022-07-07 14:58:25,947 [INFO] o.s.b.a.e.w.EndpointLinksResolver {restartedMain} Exposing 18 endpoint(s) beneath base path '/insights'
+2022-07-07 14:58:26,007 [INFO] o.s.b.w.e.t.TomcatWebServer {restartedMain} Tomcat started on port(s): 9099 (http) with context path ''
+2022-07-07 14:58:26,010 [INFO] s.d.s.w.p.DocumentationPluginsBootstrapper {restartedMain} Context refreshed
+2022-07-07 14:58:26,026 [INFO] s.d.s.w.p.DocumentationPluginsBootstrapper {restartedMain} Found 1 custom documentation plugin(s)
+2022-07-07 14:58:26,049 [INFO] s.d.s.w.s.ApiListingReferenceScanner {restartedMain} Scanning for api listing references
+2022-07-07 14:58:26,205 [INFO] o.s.b.w.e.t.TomcatWebServer {restartedMain} Tomcat started on port(s): 8682 (http) with context path '/api/v1.0'
+2022-07-07 14:58:26,205 [INFO] c.t.TweetAppApiApplication {restartedMain} Started TweetAppApiApplication in 3.853 seconds (JVM running for 4.891)
+2022-07-07 14:58:26,544 [INFO] o.a.c.c.C.[.[.[.0] {RMI TCP Connection(3)-192.168.0.192} Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-07 14:58:26,544 [INFO] o.s.w.s.DispatcherServlet {RMI TCP Connection(3)-192.168.0.192} Initializing Servlet 'dispatcherServlet'
+2022-07-07 14:58:26,550 [INFO] o.s.w.s.DispatcherServlet {RMI TCP Connection(3)-192.168.0.192} Completed initialization in 6 ms
+2022-07-07 14:58:26,567 [INFO] o.m.d.connection {RMI TCP Connection(4)-192.168.0.192} Opened connection [connectionId{localValue:2, serverValue:21}] to localhost:27017
+2022-07-07 14:58:42,257 [INFO] o.s.s.c.ThreadPoolTaskExecutor {Thread-11} Shutting down ExecutorService 'applicationTaskExecutor'
+2022-07-07 14:59:31,427 [INFO] c.t.TweetAppApiApplication {restartedMain} Starting TweetAppApiApplication on DESKTOP-0GESMLH with PID 25748 (started by 888245 in C:\Users\888245\git\FINAL VERSION TWEETAPP\tweet_app_api_service)
+2022-07-07 14:59:31,431 [DEBUG] c.t.TweetAppApiApplication {restartedMain} Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
+2022-07-07 14:59:31,431 [INFO] c.t.TweetAppApiApplication {restartedMain} No active profile set, falling back to default profiles: default
+2022-07-07 14:59:31,458 [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor {restartedMain} Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-07-07 14:59:31,459 [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor {restartedMain} For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-07-07 14:59:32,436 [INFO] o.s.d.r.c.RepositoryConfigurationDelegate {restartedMain} Bootstrapping Spring Data repositories in DEFAULT mode.
+2022-07-07 14:59:32,497 [INFO] o.s.d.r.c.RepositoryConfigurationDelegate {restartedMain} Finished Spring Data repository scanning in 59ms. Found 2 repository interfaces.
+2022-07-07 14:59:32,975 [INFO] o.s.b.w.e.t.TomcatWebServer {restartedMain} Tomcat initialized with port(s): 8682 (http)
+2022-07-07 14:59:32,995 [INFO] o.a.c.c.StandardService {restartedMain} Starting service [Tomcat]
+2022-07-07 14:59:32,995 [INFO] o.a.c.c.StandardEngine {restartedMain} Starting Servlet engine: [Apache Tomcat/9.0.14]
+2022-07-07 14:59:33,001 [INFO] o.a.c.c.AprLifecycleListener {restartedMain} The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Eclipse Foundation\jdk-11.0.12.7-hotspot\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Python310\Scripts\;C:\Python310\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\WindowsPowerShell\Scripts;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Java\jdk1.8.0_261\bin;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\webdrivers;C:\Program Files\Java\jdk1.8.0_261\bin;C:\Users\888245\AppData\Local\Programs\Git\cmd;C:\Program Files\IntelliJ IDEA Community Edition 2021.1.3\bin;;C:\Users\888245\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\888245\AppData\Roaming\npm;.]
+2022-07-07 14:59:33,094 [INFO] o.a.c.c.C.[.[.[.0] {restartedMain} Initializing Spring embedded WebApplicationContext
+2022-07-07 14:59:33,094 [INFO] o.s.w.c.ContextLoader {restartedMain} Root WebApplicationContext: initialization completed in 1635 ms
+2022-07-07 14:59:33,274 [DEBUG] c.t.c.m.MongoDbConfig {restartedMain} Initializing MongoDB uri: mongodb://localhost:27017
+2022-07-07 14:59:33,405 [INFO] o.m.d.cluster {restartedMain} Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2022-07-07 14:59:33,429 [INFO] c.t.c.m.MongoDbConfig {restartedMain} Database Name: 'tweet_app'
+2022-07-07 14:59:33,448 [INFO] o.m.d.connection {cluster-ClusterId{value='62c6a77d299ac543749a6e2a', description='null'}-localhost:27017} Opened connection [connectionId{localValue:1, serverValue:22}] to localhost:27017
+2022-07-07 14:59:33,452 [INFO] o.m.d.cluster {cluster-ClusterId{value='62c6a77d299ac543749a6e2a', description='null'}-localhost:27017} Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 0, 23]}, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2229500}
+2022-07-07 14:59:33,598 [INFO] o.s.b.d.a.OptionalLiveReloadServer {restartedMain} LiveReload server is running on port 35729
+2022-07-07 14:59:34,063 [INFO] o.s.s.w.DefaultSecurityFilterChain {restartedMain} Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@51d82fcf, org.springframework.security.web.context.SecurityContextPersistenceFilter@605e9f95, org.springframework.security.web.header.HeaderWriterFilter@405177b4, org.springframework.security.web.authentication.logout.LogoutFilter@54d9a477, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6157c344, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@21e20a6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@379f450c, org.springframework.security.web.session.SessionManagementFilter@2bbfb397, org.springframework.security.web.access.ExceptionTranslationFilter@3fc8a04, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2339ce34]
+2022-07-07 14:59:34,079 [INFO] s.d.s.w.PropertySourcedRequestMappingHandlerMapping {restartedMain} Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2022-07-07 14:59:34,175 [INFO] o.s.s.c.ThreadPoolTaskExecutor {restartedMain} Initializing ExecutorService 'applicationTaskExecutor'
+2022-07-07 14:59:34,564 [INFO] o.s.b.w.e.t.TomcatWebServer {restartedMain} Tomcat initialized with port(s): 8071 (http)
+2022-07-07 14:59:34,565 [INFO] o.a.c.c.StandardService {restartedMain} Starting service [Tomcat]
+2022-07-07 14:59:34,565 [INFO] o.a.c.c.StandardEngine {restartedMain} Starting Servlet engine: [Apache Tomcat/9.0.14]
+2022-07-07 14:59:34,593 [INFO] o.a.c.c.C.[.[.[/] {restartedMain} Initializing Spring embedded WebApplicationContext
+2022-07-07 14:59:34,593 [INFO] o.s.w.c.ContextLoader {restartedMain} Root WebApplicationContext: initialization completed in 106 ms
+2022-07-07 14:59:34,611 [INFO] o.s.b.a.e.w.EndpointLinksResolver {restartedMain} Exposing 18 endpoint(s) beneath base path '/insights'
+2022-07-07 14:59:34,681 [INFO] o.s.b.w.e.t.TomcatWebServer {restartedMain} Tomcat started on port(s): 8071 (http) with context path ''
+2022-07-07 14:59:34,684 [INFO] s.d.s.w.p.DocumentationPluginsBootstrapper {restartedMain} Context refreshed
+2022-07-07 14:59:34,701 [INFO] s.d.s.w.p.DocumentationPluginsBootstrapper {restartedMain} Found 1 custom documentation plugin(s)
+2022-07-07 14:59:34,728 [INFO] s.d.s.w.s.ApiListingReferenceScanner {restartedMain} Scanning for api listing references
+2022-07-07 14:59:34,913 [INFO] o.s.b.w.e.t.TomcatWebServer {restartedMain} Tomcat started on port(s): 8682 (http) with context path '/api/v1.0'
+2022-07-07 14:59:34,914 [INFO] c.t.TweetAppApiApplication {restartedMain} Started TweetAppApiApplication in 3.8 seconds (JVM running for 4.932)
+2022-07-07 14:59:35,668 [INFO] o.a.c.c.C.[.[.[.0] {RMI TCP Connection(2)-192.168.0.192} Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-07 14:59:35,668 [INFO] o.s.w.s.DispatcherServlet {RMI TCP Connection(2)-192.168.0.192} Initializing Servlet 'dispatcherServlet'
+2022-07-07 14:59:35,674 [INFO] o.s.w.s.DispatcherServlet {RMI TCP Connection(2)-192.168.0.192} Completed initialization in 5 ms
+2022-07-07 14:59:35,715 [INFO] o.m.d.connection {RMI TCP Connection(1)-192.168.0.192} Opened connection [connectionId{localValue:2, serverValue:23}] to localhost:27017
+2022-07-07 14:59:59,290 [INFO] o.a.c.c.C.[.[.[/] {http-nio-8071-exec-1} Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-07 14:59:59,291 [INFO] o.s.w.s.DispatcherServlet {http-nio-8071-exec-1} Initializing Servlet 'dispatcherServlet'
+2022-07-07 14:59:59,292 [INFO] o.s.w.s.DispatcherServlet {http-nio-8071-exec-1} Completed initialization in 1 ms
+2022-07-07 15:00:29,190 [INFO] o.s.s.c.ThreadPoolTaskExecutor {Thread-11} Shutting down ExecutorService 'applicationTaskExecutor'
