@@ -5,6 +5,7 @@ import java.util.Optional;
 import java.util.UUID;
 import java.util.stream.Collectors;
 
+import com.tweetapp.configs.metrics.AppConstants;
 import com.tweetapp.configs.metrics.AppMetrics;
 import io.micrometer.core.instrument.MeterRegistry;
 import lombok.extern.log4j.Log4j2;
@@ -88,8 +89,8 @@ public class TweetService {
                     tweet.getFirstName(), tweet.getLastName(), tweet.getTweetDate(), likesCount, commentsCount,
                     likeStatus, tweet.getComments());
         } else {
-            log.error(String.format("This tweet does not exist anymore. Current User is: %s", username));
-            throw new TweetDoesNotExistException("This tweet does not exist anymore.");
+            log.error(String.format(AppConstants.TWEET_DOES_NOT_EXISTS + "Current User is: %s", username));
+            throw new TweetDoesNotExistException(AppConstants.TWEET_DOES_NOT_EXISTS);
         }
 
     }
@@ -105,8 +106,8 @@ public class TweetService {
             log.debug("updated tweet for user : {} ", userId);
             return tweetRepository.save(tweet);
         } else {
-            log.error(String.format("This tweet does not exist anymore. Current User is: %s", userId));
-            throw new TweetDoesNotExistException("This tweet does not exist anymore.");
+            log.error(String.format(AppConstants.TWEET_DOES_NOT_EXISTS + "Current User is: %s", userId));
+            throw new TweetDoesNotExistException(AppConstants.TWEET_DOES_NOT_EXISTS);
         }
 
     }
@@ -119,8 +120,8 @@ public class TweetService {
             log.debug("deleted tweet with tweetId : {} ", tweetId);
             return true;
         } else {
-            log.error(String.format("This tweet does not exist anymore. Tweet Id is: %s", tweetId));
-            throw new TweetDoesNotExistException("This tweet does not exist anymore.");
+            log.error(String.format(AppConstants.TWEET_ISSUE + "Current tweetId is: %s", tweetId));
+            throw new TweetDoesNotExistException(AppConstants.TWEET_DOES_NOT_EXISTS);
         }
     }
 
@@ -134,8 +135,8 @@ public class TweetService {
             log.debug("liked tweet with tweetId : {} by user : {} ", tweetId, username);
             return tweetRepository.save(tweet);
         } else {
-            log.error(String.format("This tweet does not exist anymore. Current User is: %s", username));
-            throw new TweetDoesNotExistException("This tweet does not exist anymore.");
+            log.error(String.format(AppConstants.TWEET_ISSUE + "Current User is: %s", username));
+            throw new TweetDoesNotExistException(AppConstants.TWEET_DOES_NOT_EXISTS);
         }
     }
 
@@ -149,8 +150,8 @@ public class TweetService {
             log.debug("disliked tweet with tweetId : {} by user : {} ", tweetId, username);
             return tweetRepository.save(tweet);
         } else {
-            log.error(String.format("This tweet does not exist anymore. Current User is: %s", username));
-            throw new TweetDoesNotExistException("This tweet does not exist anymore.");
+            log.error(String.format(AppConstants.TWEET_ISSUE + "Current User is: %s", username));
+            throw new TweetDoesNotExistException(AppConstants.TWEET_DOES_NOT_EXISTS);
         }
     }
 
@@ -163,8 +164,8 @@ public class TweetService {
             log.debug("replied to the tweet whose tweetId is: {} by user: {}", tweetId, username);
             return tweetRepository.save(tweet);
         } else {
-            log.error(String.format("This tweet does not exist anymore. Current User is: %s", username));
-            throw new TweetDoesNotExistException("This tweet does not exist anymore.");
+            log.error(String.format(AppConstants.TWEET_ISSUE + "Current User is: %s", username));
+            throw new TweetDoesNotExistException(AppConstants.TWEET_DOES_NOT_EXISTS);
         }
     }
 

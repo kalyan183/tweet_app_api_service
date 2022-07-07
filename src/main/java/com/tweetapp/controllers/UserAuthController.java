@@ -1,5 +1,6 @@
 package com.tweetapp.controllers;
 
+import com.tweetapp.configs.metrics.AppConstants;
 import com.tweetapp.configs.metrics.AppMetrics;
 import com.tweetapp.dto.AuthenticationRequest;
 import com.tweetapp.dto.AuthenticationResponse;
@@ -53,7 +54,7 @@ public class UserAuthController {
         } catch (UsernameAlreadyExists e) {
             return new ResponseEntity<>(new AuthenticationResponse("Given userId/email already exists"), HttpStatus.CONFLICT);
         } catch (Exception e) {
-            return new ResponseEntity<>(new AuthenticationResponse("Application has faced an issue"),
+            return new ResponseEntity<>(new AuthenticationResponse(AppConstants.APP_ISSUE),
                     HttpStatus.INTERNAL_SERVER_ERROR);
         }
 

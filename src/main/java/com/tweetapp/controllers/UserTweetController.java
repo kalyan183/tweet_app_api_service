@@ -1,5 +1,7 @@
 package com.tweetapp.controllers;
 
+import com.tweetapp.configs.metrics.AppConstants;
+import com.tweetapp.configs.metrics.AppMetrics;
 import com.tweetapp.dto.ErrorResponse;
 import com.tweetapp.dto.Reply;
 import com.tweetapp.dto.TweetUpdate;
@@ -54,7 +56,7 @@ public class UserTweetController {
             log.debug("getting all the tweets..");
             return new ResponseEntity<>(tweetService.getAllTweets(), HttpStatus.OK);
         } catch (Exception e) {
-            return new ResponseEntity<>(new ErrorResponse("Application has faced an issue"),
+            return new ResponseEntity<>(new ErrorResponse(AppConstants.APP_ISSUE),
                     HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
@@ -67,9 +69,9 @@ public class UserTweetController {
             log.debug("getting the tweets for user: {}", username);
             return new ResponseEntity<>(tweetService.getUserTweets(username, loggedInUser), HttpStatus.OK);
         } catch (InvalidUsernameException e) {
-            return new ResponseEntity<>(new ErrorResponse("Invalid User param received"), HttpStatus.UNPROCESSABLE_ENTITY);
+            return new ResponseEntity<>(new ErrorResponse(AppConstants.INVALID_PARAM), HttpStatus.UNPROCESSABLE_ENTITY);
         } catch (Exception e) {
-            return new ResponseEntity<>(new ErrorResponse("Application has faced an issue"), HttpStatus.INTERNAL_SERVER_ERROR);
+            return new ResponseEntity<>(new ErrorResponse(AppConstants.APP_ISSUE), HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
 
@@ -92,9 +94,9 @@ public class UserTweetController {
             log.debug("updating the tweet for user: {}", userId);
             return new ResponseEntity<>(tweetService.updateTweet(userId, tweetUpdate.getTweetId(), tweetUpdate.getTweetText()), HttpStatus.OK);
         } catch (TweetDoesNotExistException e) {
-            return new ResponseEntity<>(new ErrorResponse("Given tweetId cannot be found"), HttpStatus.NOT_FOUND);
+            return new ResponseEntity<>(new ErrorResponse(AppConstants.TWEET_ISSUE), HttpStatus.NOT_FOUND);
         } catch (Exception e) {
-            return new ResponseEntity<>(new ErrorResponse("Application has faced an issue"), HttpStatus.INTERNAL_SERVER_ERROR);
+            return new ResponseEntity<>(new ErrorResponse(AppConstants.APP_ISSUE), HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
 
@@ -106,9 +108,9 @@ public class UserTweetController {
             log.debug("deleting tweet for user: {}", userId);
             return new ResponseEntity<>(tweetService.deleteTweet(tweetId), HttpStatus.OK);
         } catch (TweetDoesNotExistException e) {
-            return new ResponseEntity<>(new ErrorResponse("Given tweetId cannot be found"), HttpStatus.NOT_FOUND);
+            return new ResponseEntity<>(new ErrorResponse(AppConstants.TWEET_ISSUE), HttpStatus.NOT_FOUND);
         } catch (Exception e) {
-            return new ResponseEntity<>(new ErrorResponse("Application has faced an issue"), HttpStatus.INTERNAL_SERVER_ERROR);
+            return new ResponseEntity<>(new ErrorResponse(AppConstants.APP_ISSUE), HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
 
@@ -120,9 +122,9 @@ public class UserTweetController {
             log.debug("liking tweet for user: {}", username);
             return new ResponseEntity<>(tweetService.likeTweet(username, tweetId), HttpStatus.OK);
         } catch (TweetDoesNotExistException e) {
-            return new ResponseEntity<>(new ErrorResponse("Given tweetId cannot be found"), HttpStatus.NOT_FOUND);
+            return new ResponseEntity<>(new ErrorResponse(AppConstants.TWEET_ISSUE), HttpStatus.NOT_FOUND);
         } catch (Exception e) {
-            return new ResponseEntity<>(new ErrorResponse("Application has faced an issue"), HttpStatus.INTERNAL_SERVER_ERROR);
+            return new ResponseEntity<>(new ErrorResponse(AppConstants.APP_ISSUE), HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
 
@@ -134,9 +136,9 @@ public class UserTweetController {
             log.debug("disliking tweet for user: {}", username);
             return new ResponseEntity<>(tweetService.dislikeTweet(username, tweetId), HttpStatus.OK);
         } catch (TweetDoesNotExistException e) {
-            return new ResponseEntity<>(new ErrorResponse("Given tweetId cannot be found"), HttpStatus.NOT_FOUND);
+            return new ResponseEntity<>(new ErrorResponse(AppConstants.TWEET_ISSUE), HttpStatus.NOT_FOUND);
         } catch (Exception e) {
-            return new ResponseEntity<>(new ErrorResponse("Application has faced an issue"), HttpStatus.INTERNAL_SERVER_ERROR);
+            return new ResponseEntity<>(new ErrorResponse(AppConstants.APP_ISSUE), HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
 
@@ -148,9 +150,9 @@ public class UserTweetController {
             log.debug("replying to the tweet for user: {}", userId);
             return new ResponseEntity<>(tweetService.replyTweet(userId, tweetId, tweetReply.getComment()), HttpStatus.OK);
         } catch (TweetDoesNotExistException e) {
-            return new ResponseEntity<>(new ErrorResponse("Given tweetId cannot be found"), HttpStatus.NOT_FOUND);
+            return new ResponseEntity<>(new ErrorResponse(AppConstants.TWEET_ISSUE), HttpStatus.NOT_FOUND);
         } catch (Exception e) {
-            return new ResponseEntity<>(new ErrorResponse("Application has faced an issue"), HttpStatus.INTERNAL_SERVER_ERROR);
+            return new ResponseEntity<>(new ErrorResponse(AppConstants.APP_ISSUE), HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
 

@@ -30,8 +30,8 @@ public class GlobalExceptionHandler {
     @ResponseStatus(HttpStatus.BAD_REQUEST)
     @ExceptionHandler(MethodArgumentNotValidException.class)
     public Map<String, String> handleValidationExceptions(
-            MethodArgumentNotValidException ex) {
-        Map<String, String> errors = new HashMap<>();
+            final MethodArgumentNotValidException ex) {
+        final Map<String, String> errors = new HashMap<>();
         ex.getBindingResult().getAllErrors().forEach(error -> {
             String fieldName = ((FieldError) error).getField();
             String errorMessage = error.getDefaultMessage();
@@ -43,17 +43,25 @@ public class GlobalExceptionHandler {
 
     @ResponseStatus(HttpStatus.BAD_REQUEST)
     @ExceptionHandler(UsernameAlreadyExists.class)
-    public ResponseEntity<Object> handleUserExistsExceptions(UsernameAlreadyExists ex, WebRequest request) {
-        ExceptionDetails errorDetails = new ExceptionDetails(
+    public ResponseEntity<Object> handleUserExistsExceptions(final UsernameAlreadyExists ex, final WebRequest request) {
+        final ExceptionDetails errorDetails = new ExceptionDetails(
                 ex.getLocalizedMessage(), "Username already exists.", request.getDescription(false), new Date());
         return new ResponseEntity<>(errorDetails, HttpStatus.BAD_REQUEST);
     }
 
     @ResponseStatus(HttpStatus.UNAUTHORIZED)
     @ExceptionHandler(TweetDoesNotExistException.class)
-    public ResponseEntity<Object> handleUnauthorizedExceptions(TweetDoesNotExistException ex, WebRequest request) {
-        ExceptionDetails errorDetails = new ExceptionDetails(
+    public ResponseEntity<Object> handleUnauthorizedExceptions(final TweetDoesNotExistException ex, final WebRequest request) {
+        final ExceptionDetails errorDetails = new ExceptionDetails(
                 ex.getLocalizedMessage(), "Could not find Tweet. May be doesn't exist?...", request.getDescription(false), new Date());
         return new ResponseEntity<>(errorDetails, HttpStatus.UNAUTHORIZED);
+    }
+
+    @ResponseStatus(HttpStatus.BAD_REQUEST)
+    @ExceptionHandler(PasswordMisMatchException.class)
+    public ResponseEntity<Object> handlePasswordExceptions(final PasswordMisMatchException ex, final WebRequest request) {
+        final ExceptionDetails errorDetails = new ExceptionDetails(
+                ex.getLocalizedMessage(), "Two Password's didnt match", request.getDescription(false), new Date());
+        return new ResponseEntity<>(errorDetails, HttpStatus.BAD_REQUEST);
     }
 }

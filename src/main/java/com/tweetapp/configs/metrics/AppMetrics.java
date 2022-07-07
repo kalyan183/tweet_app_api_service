@@ -1,5 +1,8 @@
 package com.tweetapp.configs.metrics;
 
+import lombok.AccessLevel;
+import lombok.NoArgsConstructor;
+
 /**
  * Responsible to hold Prometheus Counter Metrics.
  *
@@ -7,46 +10,42 @@ package com.tweetapp.configs.metrics;
  * @project tweet_app_api_service.
  * @since 02/07/2022 - 09:35 PM
  */
+@NoArgsConstructor(access = AccessLevel.PRIVATE)
 public abstract class AppMetrics {
 
-    public static abstract class Type {
+    public abstract static class Type {
 
-        public static abstract class Login {
+        public abstract static class Login {
 
             public static final String KEY = "tweet.app.user.account.login";
         }
 
-        public static abstract class Register {
+        public abstract static class Register {
 
             public static final String KEY = "tweet.app.user.account.register";
         }
 
-        public static abstract class Post {
+        public abstract static class Post {
 
             public static final String KEY = "tweet.app.user.tweets.post";
         }
 
-        public static abstract class Update {
+        public abstract static class Update {
 
             public static final String KEY = "tweet.app.user.tweets.update";
         }
 
-        public static abstract class Reply {
-
-            public static final String KEY = "tweet.app.user.tweets.reply";
-        }
-
-        public static abstract class Delete {
+        public abstract static class Delete {
 
             public static final String KEY = "tweet.app.user.tweets.delete";
         }
 
-        public static abstract class Like {
+        public abstract static class Like {
 
             public static final String KEY = "tweet.app.user.tweets.like";
         }
 
-        public static abstract class Dislike {
+        public abstract static class Dislike {
 
             public static final String KEY = "tweet.app.user.tweets.dislike";
         }

@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 import com.tweetapp.configs.metrics.AppMetrics;
+import com.tweetapp.exception.PasswordMisMatchException;
 import io.micrometer.core.instrument.MeterRegistry;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -59,7 +60,7 @@ public class UserOperationsService {
     }
 
     // Method to change a user's password
-    public UserModel changePassword(final String username, final String newPassword, final String contact) throws Exception {
+    public UserModel changePassword(final String username, final String newPassword, final String contact) throws PasswordMisMatchException {
         final UserModel userDetails = userRepository.findByUsername(username);
         if (userDetails.getContactNum().equalsIgnoreCase(contact)
                 && userDetails.getUsername().equalsIgnoreCase(username)) {
@@ -68,7 +69,7 @@ public class UserOperationsService {
             return userRepository.save(userDetails);
         } else {
             log.error(String.format("unable to change password for user: %s", username));
-            throw new Exception("Unable to change password");
+            throw new PasswordMisMatchException(String.format("unable to change password for user: %s", username));
         }
     }
 
