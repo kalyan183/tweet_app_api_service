@@ -1,7 +1,6 @@
 package com.tweetapp.controllers;
 
 import com.tweetapp.configs.metrics.AppConstants;
-import com.tweetapp.configs.metrics.AppMetrics;
 import com.tweetapp.dto.ErrorResponse;
 import com.tweetapp.dto.Reply;
 import com.tweetapp.dto.TweetUpdate;
@@ -12,6 +11,7 @@ import com.tweetapp.services.TweetService;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -42,14 +42,17 @@ public class UserTweetController {
     }
 
     // Method to post a new tweet
-    @PostMapping(value = "/tweets/{username}/add")
+    @PostMapping(value = "/tweets/{username}/add",
+            produces = {MediaType.APPLICATION_JSON_VALUE},
+            consumes = {MediaType.APPLICATION_JSON_VALUE})
     public ResponseEntity<?> postNewTweet(@PathVariable("username") String username, @RequestBody Tweet newTweet) {
         return new ResponseEntity<>(tweetService.postNewTweet(username, newTweet), HttpStatus.CREATED);
 
     }
 
     // Method to retrieve all tweets
-    @GetMapping(value = "/tweets/all")
+    @GetMapping(value = "/tweets/all", produces = {MediaType.APPLICATION_JSON_VALUE},
+            consumes = {MediaType.APPLICATION_JSON_VALUE})
     public ResponseEntity<?> getAllTweets() {
 
         try {
@@ -62,7 +65,8 @@ public class UserTweetController {
     }
 
     // Method to get a user's tweets
-    @GetMapping(value = "/tweets/{username}")
+    @GetMapping(value = "/tweets/{username}", produces = {MediaType.APPLICATION_JSON_VALUE},
+            consumes = {MediaType.APPLICATION_JSON_VALUE})
     public ResponseEntity<?> getUserTweets(@PathVariable("username") String username,
                                            @RequestHeader(value = "loggedInUser") String loggedInUser) {
         try {
@@ -75,7 +79,8 @@ public class UserTweetController {
         }
     }
 
-    @GetMapping(value = "/tweets/{username}/{tweetId}")
+    @GetMapping(value = "/tweets/{username}/{tweetId}", produces = {MediaType.APPLICATION_JSON_VALUE},
+            consumes = {MediaType.APPLICATION_JSON_VALUE})
     public ResponseEntity<?> getTweetDetails(@PathVariable("username") String username,
                                              @PathVariable("tweetId") String tweetId) {
         try {
@@ -87,7 +92,8 @@ public class UserTweetController {
     }
 
     // Method to update a tweet
-    @PutMapping(value = "/tweets/{username}/update")
+    @PutMapping(value = "/tweets/{username}/update", produces = {MediaType.APPLICATION_JSON_VALUE},
+            consumes = {MediaType.APPLICATION_JSON_VALUE})
     public ResponseEntity<?> updateTweet(@PathVariable("username") String userId,
                                          @RequestBody TweetUpdate tweetUpdate) {
         try {
@@ -101,7 +107,8 @@ public class UserTweetController {
     }
 
     // Method to delete a tweet
-    @DeleteMapping(value = "/tweets/{username}/delete")
+    @DeleteMapping(value = "/tweets/{username}/delete", produces = {MediaType.APPLICATION_JSON_VALUE},
+            consumes = {MediaType.APPLICATION_JSON_VALUE})
     public ResponseEntity<?> deleteTweet(@PathVariable("username") String userId,
                                          @RequestHeader(value = "tweetId") String tweetId) {
         try {
@@ -115,7 +122,8 @@ public class UserTweetController {
     }
 
     // Post tweets Like
-    @PostMapping(value = "/tweets/{username}/like/{tweetId}")
+    @PostMapping(value = "/tweets/{username}/like/{tweetId}", produces = {MediaType.APPLICATION_JSON_VALUE},
+            consumes = {MediaType.APPLICATION_JSON_VALUE})
     public ResponseEntity<?> likeATweet(@PathVariable("username") String username,
                                         @PathVariable(value = "tweetId") String tweetId) {
         try {
@@ -129,7 +137,8 @@ public class UserTweetController {
     }
 
     // dislike a tweet
-    @PostMapping(value = "/tweets/{username}/dislike/{tweetId}")
+    @PostMapping(value = "/tweets/{username}/dislike/{tweetId}", produces = {MediaType.APPLICATION_JSON_VALUE},
+            consumes = {MediaType.APPLICATION_JSON_VALUE})
     public ResponseEntity<?> dislikeATweet(@PathVariable("username") String username,
                                            @PathVariable(value = "tweetId") String tweetId) {
         try {
@@ -143,7 +152,8 @@ public class UserTweetController {
     }
 
     // Post tweet comment
-    @PostMapping(value = "/tweets/{username}/reply/{tweetId}")
+    @PostMapping(value = "/tweets/{username}/reply/{tweetId}", produces = {MediaType.APPLICATION_JSON_VALUE},
+            consumes = {MediaType.APPLICATION_JSON_VALUE})
     public ResponseEntity<?> replyToTweet(@PathVariable("username") String userId,
                                           @PathVariable("tweetId") String tweetId, @RequestBody Reply tweetReply) {
         try {

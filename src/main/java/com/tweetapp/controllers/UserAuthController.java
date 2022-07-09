@@ -12,6 +12,7 @@ import io.swagger.annotations.Api;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -45,7 +46,7 @@ public class UserAuthController {
         this.authenticationManager = authenticationManager;
     }
 
-    @PostMapping("/tweets/register")
+    @PostMapping(value = "/tweets/register", produces = {MediaType.APPLICATION_JSON_VALUE})
     public ResponseEntity<?> subscribeClient(@RequestBody UserModel userModel) {
 
         try {
@@ -60,7 +61,7 @@ public class UserAuthController {
 
     }
 
-    @PostMapping("/tweets/login")
+    @PostMapping(value = "/tweets/login", produces = {MediaType.APPLICATION_JSON_VALUE})
     public ResponseEntity<?> authenticateClient(@RequestBody AuthenticationRequest authenticationRequest) {
         String username = authenticationRequest.getUsername();
         String password = authenticationRequest.getPassword();

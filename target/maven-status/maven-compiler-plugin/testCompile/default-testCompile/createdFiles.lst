@@ -1,0 +1,3 @@
+com\tweetapp\repositories\TweetRepositoryTests.class
+com\tweetapp\services\UserLoadServiceTest.class
+com\tweetapp\repositories\UserRepositoryTests.class

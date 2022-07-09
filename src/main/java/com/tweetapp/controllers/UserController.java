@@ -3,6 +3,7 @@ package com.tweetapp.controllers;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -32,7 +33,7 @@ public class UserController {
     }
 
     //method to update user password
-    @PutMapping(value = "/tweets/{username}/forgot")
+    @PutMapping(value = "/tweets/{username}/forgot", produces = {MediaType.APPLICATION_JSON_VALUE})
     public ResponseEntity<?> changePassword(@PathVariable("username") String username,
                                             @RequestBody NewPassword newPassword) {
         try {
@@ -44,7 +45,7 @@ public class UserController {
     }
 
     // Method to retrieve all users list
-    @GetMapping(value = "/tweets/users/all")
+    @GetMapping(value = "/tweets/users/all", produces = {MediaType.APPLICATION_JSON_VALUE})
     public ResponseEntity<?> getAllUsers() {
         log.debug("fetching total users");
         return new ResponseEntity<>(userModelService.getAllUsers(), HttpStatus.OK);
@@ -52,7 +53,7 @@ public class UserController {
     }
 
     //method to search for like users by username
-    @GetMapping(value = "/tweets/user/search/{username}")
+    @GetMapping(value = "/tweets/user/search/{username}", produces = {MediaType.APPLICATION_JSON_VALUE})
     public ResponseEntity<?> searchForUsers(@PathVariable String username) {
         log.debug("fetching user by userName: {}", username);
         return new ResponseEntity<>(userModelService.getUsersByUsername(username), HttpStatus.OK);
