@@ -4,7 +4,6 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.tweetapp.dto.AuthenticationRequest;
 import com.tweetapp.entities.UserModel;
-import com.tweetapp.exception.InvalidUsernameException;
 import com.tweetapp.services.UserOperationsService;
 import io.micrometer.core.instrument.MeterRegistry;
 import org.junit.Assert;
@@ -32,7 +31,7 @@ import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 
 /**
- * @author Kalyan Kommulapati  (kkommulapati@opsecsecurityonline.com)
+ * @author Kalyan Kommulapati
  * @project tweet_app_api_service
  * @since 09/07/2022 - 11:41 PM
  */

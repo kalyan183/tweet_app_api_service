@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.data.mongodb.config.AbstractMongoConfiguration;
 
 /**
- * @author Kalyan Kommulapati  (kkommulapati@opsecsecurityonline.com)
+ * @author Kalyan Kommulapati
  * @project tweet_app_api_service
  * @since 07/07/2022 - 09:59 AM
  */

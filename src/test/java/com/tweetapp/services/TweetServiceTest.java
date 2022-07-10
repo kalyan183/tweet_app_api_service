@@ -1,15 +1,10 @@
 package com.tweetapp.services;
 
-import com.tweetapp.configs.metrics.AppMetrics;
 import com.tweetapp.dto.Comment;
 import com.tweetapp.dto.TweetResponse;
 import com.tweetapp.entities.Tweet;
-import com.tweetapp.entities.UserModel;
 import com.tweetapp.exception.InvalidUsernameException;
-import com.tweetapp.exception.PasswordMisMatchException;
-import com.tweetapp.exception.TweetDoesNotExistException;
 import com.tweetapp.repositories.TweetRepository;
-import io.micrometer.core.instrument.Counter;
 import io.micrometer.core.instrument.MeterRegistry;
 import lombok.extern.log4j.Log4j2;
 import org.junit.Assert;
@@ -18,26 +13,20 @@ import org.junit.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
-import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
 import org.mockito.junit.jupiter.MockitoExtension;
-import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.Date;
 import java.util.List;
-import java.util.Optional;
 
 import static org.mockito.Mockito.doNothing;
-import static org.mockito.Mockito.times;
-import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
 /**
- * @author Kalyan Kommulapati  (kkommulapati@opsecsecurityonline.com)
+ * @author Kalyan Kommulapati
  * @project tweet_app_api_service
  * @since 09/07/2022 - 06:13 PM
  */

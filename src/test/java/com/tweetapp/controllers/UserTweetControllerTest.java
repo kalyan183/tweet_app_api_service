@@ -33,7 +33,7 @@ import java.util.Date;
 import java.util.List;
 
 /**
- * @author Kalyan Kommulapati  (kkommulapati@opsecsecurityonline.com)
+ * @author Kalyan Kommulapati
  * @project tweet_app_api_service
  * @since 09/07/2022 - 08:32 PM
  */

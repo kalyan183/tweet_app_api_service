@@ -3,7 +3,7 @@ package com.tweetapp.configs.metrics;
 import lombok.experimental.UtilityClass;
 
 /**
- * @author Kalyan Kommulapati  (kkommulapati@opsecsecurityonline.com)
+ * @author Kalyan Kommulapati
  * @project tweet_app_api_service
  * @since 07/07/2022 - 02:14 PM
  */

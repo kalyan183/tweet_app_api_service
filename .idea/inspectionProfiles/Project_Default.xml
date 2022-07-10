@@ -20,6 +20,7 @@
           <option value="org.projectlombok:lombok" />
           <option value="io.springfox:springfox-swagger2" />
           <option value="io.springfox:springfox-swagger-ui" />
+          <option value="org.mockito:mockito-junit-jupiter" />
         </list>
       </option>
     </inspection_tool>

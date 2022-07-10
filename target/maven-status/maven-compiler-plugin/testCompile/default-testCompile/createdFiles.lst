@@ -1,3 +1,8 @@
-com\tweetapp\repositories\TweetRepositoryTests.class
 com\tweetapp\services\UserLoadServiceTest.class
 com\tweetapp\repositories\UserRepositoryTests.class
+com\tweetapp\controllers\UserAuthControllerTest.class
+com\tweetapp\repositories\TweetRepositoryTests.class
+com\tweetapp\services\UserOperationsServiceTest.class
+com\tweetapp\controllers\UserControllerTest.class
+com\tweetapp\controllers\UserTweetControllerTest.class
+com\tweetapp\services\TweetServiceTest.class

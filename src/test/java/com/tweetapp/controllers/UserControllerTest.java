@@ -4,7 +4,6 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.tweetapp.dto.NewPassword;
 import com.tweetapp.entities.UserModel;
-import com.tweetapp.exception.InvalidUsernameException;
 import com.tweetapp.exception.PasswordMisMatchException;
 import com.tweetapp.services.UserOperationsService;
 import org.junit.Assert;
@@ -33,7 +32,7 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * @author Kalyan Kommulapati  (kkommulapati@opsecsecurityonline.com)
+ * @author Kalyan Kommulapati
  * @project tweet_app_api_service
  * @since 09/07/2022 - 11:27 PM
  */
