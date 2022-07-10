@@ -20,7 +20,5 @@ swagger - http://localhost:8682/api/v1.0/swagger-ui.html#/
 ## Code Coverage 
 SonarCloud - https://sonarcloud.io/summary/new_code?id=kalyan183_tweet_app_api_service 
 
-## In Progess 
-1) adding test cases
-2) docker
-3) elk stack for logging.
+## Test cases
+used mockito-junit-jupiter 4.5.1 & junit-jupiter-api
