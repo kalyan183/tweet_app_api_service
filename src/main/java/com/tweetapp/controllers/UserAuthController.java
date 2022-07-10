@@ -46,7 +46,16 @@ public class UserAuthController {
         this.authenticationManager = authenticationManager;
     }
 
-    @PostMapping(value = "/tweets/register", produces = {MediaType.APPLICATION_JSON_VALUE})
+    @PostMapping(value = "/tweets/register", consumes = {
+            MediaType.APPLICATION_JSON_VALUE,
+            MediaType.TEXT_PLAIN_VALUE,
+            MediaType.ALL_VALUE
+    },
+            produces = {
+                    MediaType.APPLICATION_JSON_VALUE,
+                    MediaType.TEXT_PLAIN_VALUE,
+                    MediaType.ALL_VALUE
+            })
     public ResponseEntity<?> subscribeClient(@RequestBody UserModel userModel) {
 
         try {
@@ -61,7 +70,16 @@ public class UserAuthController {
 
     }
 
-    @PostMapping(value = "/tweets/login", produces = {MediaType.APPLICATION_JSON_VALUE})
+    @PostMapping(value = "/tweets/login", consumes = {
+            MediaType.APPLICATION_JSON_VALUE,
+            MediaType.TEXT_PLAIN_VALUE,
+            MediaType.ALL_VALUE
+    },
+            produces = {
+                    MediaType.APPLICATION_JSON_VALUE,
+                    MediaType.TEXT_PLAIN_VALUE,
+                    MediaType.ALL_VALUE
+            })
     public ResponseEntity<?> authenticateClient(@RequestBody AuthenticationRequest authenticationRequest) {
         String username = authenticationRequest.getUsername();
         String password = authenticationRequest.getPassword();

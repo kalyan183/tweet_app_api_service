@@ -1,18 +1,17 @@
 package com.tweetapp.services;
 
-import java.util.List;
-import java.util.stream.Collectors;
-
 import com.tweetapp.configs.metrics.AppMetrics;
+import com.tweetapp.entities.UserModel;
 import com.tweetapp.exception.PasswordMisMatchException;
+import com.tweetapp.exception.UsernameAlreadyExists;
+import com.tweetapp.repositories.UserRepository;
 import io.micrometer.core.instrument.MeterRegistry;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
-import com.tweetapp.entities.UserModel;
-import com.tweetapp.exception.UsernameAlreadyExists;
-import com.tweetapp.repositories.UserRepository;
+import java.util.List;
+import java.util.stream.Collectors;
 
 
 /**

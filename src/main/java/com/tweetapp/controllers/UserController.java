@@ -33,7 +33,16 @@ public class UserController {
     }
 
     //method to update user password
-    @PutMapping(value = "/tweets/{username}/forgot", produces = {MediaType.APPLICATION_JSON_VALUE})
+    @PutMapping(value = "/tweets/{username}/forgot", consumes = {
+            MediaType.APPLICATION_JSON_VALUE,
+            MediaType.TEXT_PLAIN_VALUE,
+            MediaType.ALL_VALUE
+    },
+            produces = {
+                    MediaType.APPLICATION_JSON_VALUE,
+                    MediaType.TEXT_PLAIN_VALUE,
+                    MediaType.ALL_VALUE
+            })
     public ResponseEntity<?> changePassword(@PathVariable("username") String username,
                                             @RequestBody NewPassword newPassword) {
         try {
@@ -45,7 +54,16 @@ public class UserController {
     }
 
     // Method to retrieve all users list
-    @GetMapping(value = "/tweets/users/all", produces = {MediaType.APPLICATION_JSON_VALUE})
+    @GetMapping(value = "/tweets/users/all", consumes = {
+            MediaType.APPLICATION_JSON_VALUE,
+            MediaType.TEXT_PLAIN_VALUE,
+            MediaType.ALL_VALUE
+    },
+            produces = {
+                    MediaType.APPLICATION_JSON_VALUE,
+                    MediaType.TEXT_PLAIN_VALUE,
+                    MediaType.ALL_VALUE
+            })
     public ResponseEntity<?> getAllUsers() {
         log.debug("fetching total users");
         return new ResponseEntity<>(userModelService.getAllUsers(), HttpStatus.OK);
@@ -53,7 +71,16 @@ public class UserController {
     }
 
     //method to search for like users by username
-    @GetMapping(value = "/tweets/user/search/{username}", produces = {MediaType.APPLICATION_JSON_VALUE})
+    @GetMapping(value = "/tweets/user/search/{username}", consumes = {
+            MediaType.APPLICATION_JSON_VALUE,
+            MediaType.TEXT_PLAIN_VALUE,
+            MediaType.ALL_VALUE
+    },
+            produces = {
+                    MediaType.APPLICATION_JSON_VALUE,
+                    MediaType.TEXT_PLAIN_VALUE,
+                    MediaType.ALL_VALUE
+            })
     public ResponseEntity<?> searchForUsers(@PathVariable String username) {
         log.debug("fetching user by userName: {}", username);
         return new ResponseEntity<>(userModelService.getUsersByUsername(username), HttpStatus.OK);

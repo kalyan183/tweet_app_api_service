@@ -1,5 +1,6 @@
 FROM openjdk:8
 VOLUME /tmp
+LABEL maintainer="Kalyan"
 EXPOSE 8682
 # =============================================================================
 #environment
