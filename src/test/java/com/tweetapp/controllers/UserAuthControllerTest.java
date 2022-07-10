@@ -2,8 +2,9 @@ package com.tweetapp.controllers;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.tweetapp.dto.AuthenticationRequest;
 import com.tweetapp.entities.UserModel;
-import com.tweetapp.exception.UsernameAlreadyExists;
+import com.tweetapp.exception.InvalidUsernameException;
 import com.tweetapp.services.UserOperationsService;
 import io.micrometer.core.instrument.MeterRegistry;
 import org.junit.Assert;
@@ -21,6 +22,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.mock.web.MockHttpServletResponse;
 import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 import org.springframework.test.context.web.WebAppConfiguration;
 import org.springframework.test.web.servlet.MockMvc;
@@ -72,20 +74,45 @@ public class UserAuthControllerTest {
                 .password("password")
                 .build();
 
-        ObjectMapper objectMapper = new ObjectMapper();
-        String jsonObject = objectMapper.writeValueAsString(userModel);
-
 
         Mockito.doReturn(userModel).when(userModelService).createUser(userModel);
         RequestBuilder requestBuilder = MockMvcRequestBuilders
                 .post("/tweets/register")
                 .contentType(MediaType.APPLICATION_JSON)
-                .content(jsonObject)
+                .content(convertToJson(userModel))
                 .accept(MediaType.APPLICATION_JSON);
 
         MvcResult mvcResult = mockMvc.perform(requestBuilder).andReturn();
         MockHttpServletResponse response = mvcResult.getResponse();
 
         Assert.assertEquals(HttpStatus.CREATED.value(), response.getStatus());
+    }
+
+    @Test
+    public void testAuthenticateClientWithException() throws Exception {
+
+        final AuthenticationRequest authenticationRequest = new AuthenticationRequest();
+        authenticationRequest.setUsername("Test");
+        authenticationRequest.setPassword("TestPassword");
+
+        Mockito.doAnswer(invocation -> {
+                    throw new Exception("Username provided is invalid");
+                })
+                .when(authenticationManager)
+                .authenticate(new UsernamePasswordAuthenticationToken("Test", "TestPassword"));
+
+        final RequestBuilder requestBuilder = MockMvcRequestBuilders
+                .post("/tweets/login")
+                .content(convertToJson(authenticationRequest))
+                .contentType(MediaType.APPLICATION_JSON)
+                .accept(MediaType.APPLICATION_JSON);
+        mockMvc.perform(requestBuilder).andReturn();
+        Assert.assertTrue(HttpStatus.UNAUTHORIZED.is4xxClientError());
+    }
+
+
+    private static String convertToJson(Object ob) throws JsonProcessingException {
+        ObjectMapper objectMapper = new ObjectMapper();
+        return objectMapper.writeValueAsString(ob);
     }
 }

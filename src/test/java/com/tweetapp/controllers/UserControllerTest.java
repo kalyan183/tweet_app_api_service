@@ -1,8 +1,11 @@
 package com.tweetapp.controllers;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.tweetapp.dto.NewPassword;
 import com.tweetapp.entities.UserModel;
+import com.tweetapp.exception.InvalidUsernameException;
+import com.tweetapp.exception.PasswordMisMatchException;
 import com.tweetapp.services.UserOperationsService;
 import org.junit.Assert;
 import org.junit.Before;
@@ -69,15 +72,12 @@ public class UserControllerTest {
                 .contactNum("1234567890")
                 .email("henry@yahoo.com").build();
 
-        ObjectMapper objectMapper = new ObjectMapper();
-        String jsonObject = objectMapper.writeValueAsString(newPassword);
-
 
         Mockito.doReturn(model).when(userOperationsService).changePassword("user2", newPassword.getNewPassword(), newPassword.getContact());
         RequestBuilder requestBuilder = MockMvcRequestBuilders
                 .put("/tweets/{username}/forgot", "user2")
                 .contentType(MediaType.APPLICATION_JSON)
-                .content(jsonObject)
+                .content(convertToJson(model))
                 .accept(MediaType.APPLICATION_JSON);
 
         MvcResult mvcResult = mockMvc.perform(requestBuilder).andReturn();
@@ -106,5 +106,34 @@ public class UserControllerTest {
         MockHttpServletResponse response = mvcResult.getResponse();
 
         Assert.assertEquals(HttpStatus.OK.value(), response.getStatus());
+    }
+
+    @Test
+    public void testChangePasswordForPassWordMismatchException() throws Exception {
+
+        NewPassword newPassword = new NewPassword();
+        newPassword.setNewPassword("newPassword");
+        newPassword.setContact("1234567890");
+
+
+        Mockito.doThrow(new PasswordMisMatchException("Dear User, New Password & Old Password didnt match. Please Try Again!"))
+                .when(userOperationsService)
+                .changePassword("user2", newPassword.getNewPassword(), newPassword.getContact());
+
+        RequestBuilder requestBuilder = MockMvcRequestBuilders
+                .put("/tweets/{username}/forgot", "user2")
+                .content(convertToJson(newPassword))
+                .contentType(MediaType.APPLICATION_JSON)
+                .accept(MediaType.APPLICATION_JSON);
+        MvcResult mvcResult = mockMvc.perform(requestBuilder).andReturn();
+        MockHttpServletResponse response = mvcResult.getResponse();
+
+        Assert.assertEquals(HttpStatus.BAD_REQUEST.value(), response.getStatus());
+
+    }
+
+    private static String convertToJson(Object ob) throws JsonProcessingException {
+        ObjectMapper objectMapper = new ObjectMapper();
+        return objectMapper.writeValueAsString(ob);
     }
 }

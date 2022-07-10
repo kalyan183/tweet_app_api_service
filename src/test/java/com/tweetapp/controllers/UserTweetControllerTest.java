@@ -3,7 +3,7 @@ package com.tweetapp.controllers;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.tweetapp.dto.Comment;
 import com.tweetapp.entities.Tweet;
-import com.tweetapp.repositories.TweetRepository;
+import com.tweetapp.exception.InvalidUsernameException;
 import com.tweetapp.services.TweetService;
 import org.junit.Assert;
 import org.junit.Before;
@@ -109,5 +109,21 @@ public class UserTweetControllerTest {
         MockHttpServletResponse response = mvcResult.getResponse();
 
         Assert.assertEquals(HttpStatus.CREATED.value(), response.getStatus());
+    }
+
+    @Test
+    public void testGetUserTweetsWithInvalidUserNameException() throws Exception {
+
+        Mockito.doThrow(new InvalidUsernameException("Username provided is invalid"))
+                .when(tweetService)
+                .getUserTweets("user2", "loggedInUser");
+
+        RequestBuilder requestBuilder = MockMvcRequestBuilders
+                .get("/tweets/{username}", "user2")
+                .header("loggedInUser", "loggedInUser")
+                .contentType(MediaType.APPLICATION_JSON)
+                .accept(MediaType.APPLICATION_JSON);
+        mockMvc.perform(requestBuilder).andReturn();
+        Assert.assertTrue(HttpStatus.NOT_FOUND.is4xxClientError());
     }
 }

@@ -51,14 +51,13 @@ public class UserTweetController {
     }
 
     // Method to retrieve all tweets
-    @GetMapping(value = "/tweets/all", produces = {MediaType.APPLICATION_JSON_VALUE},
-            consumes = {MediaType.APPLICATION_JSON_VALUE})
+    @GetMapping(value = "/tweets/all", produces = {MediaType.APPLICATION_JSON_VALUE})
     public ResponseEntity<?> getAllTweets() {
 
         try {
             log.debug("getting all the tweets..");
             return new ResponseEntity<>(tweetService.getAllTweets(), HttpStatus.OK);
-        } catch (Exception e) {
+        } catch (TweetDoesNotExistException e) {
             return new ResponseEntity<>(new ErrorResponse(AppConstants.APP_ISSUE),
                     HttpStatus.INTERNAL_SERVER_ERROR);
         }

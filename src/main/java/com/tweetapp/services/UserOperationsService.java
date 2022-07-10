@@ -69,7 +69,7 @@ public class UserOperationsService {
             return userRepository.save(userDetails);
         } else {
             log.error(String.format("unable to change password for user: %s", username));
-            throw new PasswordMisMatchException(String.format("unable to change password for user: %s", username));
+            throw new PasswordMisMatchException(String.format("Two Passwords didnt match. unable to change password for user: %s", username));
         }
     }
 

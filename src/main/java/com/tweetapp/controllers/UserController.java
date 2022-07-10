@@ -40,7 +40,7 @@ public class UserController {
             log.debug("changing password for user: {}", username);
             return new ResponseEntity<>(userModelService.changePassword(username, newPassword.getNewPassword(), newPassword.getContact()), HttpStatus.OK);
         } catch (Exception e) {
-            return new ResponseEntity<>(new AuthenticationResponse("Unable to change password"), HttpStatus.INTERNAL_SERVER_ERROR);
+            return new ResponseEntity<>(new AuthenticationResponse("Unable to change password"), HttpStatus.BAD_REQUEST);
         }
     }
 
