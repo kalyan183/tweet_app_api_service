@@ -19,6 +19,7 @@ import org.springframework.security.authentication.UsernamePasswordAuthenticatio
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -30,6 +31,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @Api
 @Log4j2
+@RequestMapping("/api/v1.0")
 public class UserAuthController {
 
     private final UserOperationsService userModelService;
@@ -37,6 +39,9 @@ public class UserAuthController {
     private final MeterRegistry meterRegistry;
 
     private final AuthenticationManager authenticationManager;
+
+    private static final String API_V1_TWEETS_REGISTER = "/tweets/register";
+    private static final String API_V1_TWEETS_LOGIN = "/tweets/login";
 
     public UserAuthController(@Qualifier("user-model-service") UserOperationsService userModelService,
                               MeterRegistry meterRegistry,
@@ -46,7 +51,7 @@ public class UserAuthController {
         this.authenticationManager = authenticationManager;
     }
 
-    @PostMapping(value = "/tweets/register", consumes = {
+    @PostMapping(value = API_V1_TWEETS_REGISTER, consumes = {
             MediaType.APPLICATION_JSON_VALUE,
             MediaType.TEXT_PLAIN_VALUE,
             MediaType.ALL_VALUE
@@ -70,7 +75,7 @@ public class UserAuthController {
 
     }
 
-    @PostMapping(value = "/tweets/login", consumes = {
+    @PostMapping(value = API_V1_TWEETS_LOGIN, consumes = {
             MediaType.APPLICATION_JSON_VALUE,
             MediaType.TEXT_PLAIN_VALUE,
             MediaType.ALL_VALUE
@@ -87,6 +92,7 @@ public class UserAuthController {
             authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(username, password));
             log.debug("successfully logged in with userName: {}", username);
             meterRegistry.counter(AppMetrics.LOGIN).increment();
+            log.debug(String.format("Incremented prometheus counter for metric: #%s", AppMetrics.LOGIN));
         } catch (Exception e) {
             return new ResponseEntity<>(new AuthenticationResponse("Bad Credentials " + username), HttpStatus.UNAUTHORIZED);
         }

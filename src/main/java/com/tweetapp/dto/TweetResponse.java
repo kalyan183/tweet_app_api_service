@@ -18,7 +18,11 @@ import java.util.List;
 @AllArgsConstructor
 public class TweetResponse implements Serializable {
 
-    private String tweetId;
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = -6158496423418719L;
+	private String tweetId;
     private String username;
     private String tweetText;
     private String firstName;

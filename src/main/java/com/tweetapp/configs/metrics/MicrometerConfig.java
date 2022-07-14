@@ -9,7 +9,6 @@ import org.springframework.context.annotation.Configuration;
 
 import java.net.InetAddress;
 import java.net.UnknownHostException;
-import java.util.Properties;
 
 /**
  * Configuration for Micrometer metrics.

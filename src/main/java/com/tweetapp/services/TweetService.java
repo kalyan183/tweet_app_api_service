@@ -72,6 +72,7 @@ public class TweetService {
         newTweet.setTweetId(UUID.randomUUID().toString().replace("-", "").substring(0, 10));
         meterRegistry.counter(AppMetrics.POST).increment();
         log.debug("Posted new tweet for user : {} ", username);
+        log.debug(String.format("Incremented prometheus counter for metric: # %s",AppMetrics.POST));
         return tweetRepository.insert(newTweet);
     }
 
@@ -104,6 +105,7 @@ public class TweetService {
             tweet.setTweetText(updatedTweetText);
             meterRegistry.counter(AppMetrics.UPDATE).increment();
             log.debug("updated tweet for user : {} ", userId);
+            log.debug(String.format("Incremented prometheus counter for metric: # %s",AppMetrics.UPDATE));
             return tweetRepository.save(tweet);
         } else {
             log.error(String.format(AppConstants.TWEET_DOES_NOT_EXISTS + "Current User is: %s", userId));
@@ -118,6 +120,7 @@ public class TweetService {
             tweetRepository.deleteById(tweetId);
             meterRegistry.counter(AppMetrics.DELETE).increment();
             log.debug("deleted tweet with tweetId : {} ", tweetId);
+            log.debug(String.format("Incremented prometheus counter for metric: # %s",AppMetrics.DELETE));
             return true;
         } else {
             log.error(String.format(AppConstants.TWEET_ISSUE + "Current tweetId is: %s", tweetId));
@@ -133,6 +136,7 @@ public class TweetService {
             tweet.getLikes().add(username);
             meterRegistry.counter(AppMetrics.LIKE).increment();
             log.debug("liked tweet with tweetId : {} by user : {} ", tweetId, username);
+            log.debug(String.format("Incremented prometheus counter for metric: # %s",AppMetrics.LIKE));
             return tweetRepository.save(tweet);
         } else {
             log.error(String.format(AppConstants.TWEET_ISSUE + "Current User is: %s", username));
@@ -148,6 +152,7 @@ public class TweetService {
             tweet.getLikes().remove(username);
             meterRegistry.counter(AppMetrics.DISLIKE).increment();
             log.debug("disliked tweet with tweetId : {} by user : {} ", tweetId, username);
+            log.debug(String.format("Incremented prometheus counter for metric: # %s",AppMetrics.DISLIKE));
             return tweetRepository.save(tweet);
         } else {
             log.error(String.format(AppConstants.TWEET_ISSUE + "Current User is: %s", username));

@@ -21,6 +21,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestHeader;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -31,18 +32,27 @@ import org.springframework.web.bind.annotation.RestController;
 @Log4j2
 @CrossOrigin(origins = "http://localhost:4200")
 @RestController
+@RequestMapping("/api/v1.0")
 public class UserTweetController {
 
 
     private final TweetService tweetService;
-
+    private static final String API_V1_POST_NEW_TWEET = "/tweets/{username}/add";
+    private static final String API_V1_TWEETS_ALL = "/tweets/all";
+    private static final String API_V1_TWEETS_USERNAME = "/tweets/{username}";
+    private static final String API_V1_TWEETS_USERNAME_TWEET_ID = "/tweets/{username}/{tweetId}";
+    private static final String API_V1_TWEETS_USERNAME_UPDATE = "/tweets/{username}/update";
+    private static final String API_V1_TWEETS_USERNAME_REPLY_TWEET_ID = "/tweets/{username}/reply/{tweetId}";
+    private static final String API_V1_TWEETS_USERNAME_DISLIKE_TWEET_ID = "/tweets/{username}/dislike/{tweetId}";
+    private static final String API_V1_TWEETS_USERNAME_LIKE_TWEET_ID = "/tweets/{username}/like/{tweetId}";
+    private static final String API_V1_TWEETS_USERNAME_DELETE = "/tweets/{username}/delete";
 
     public UserTweetController(@Qualifier("tweet-service") TweetService tweetService) {
         this.tweetService = tweetService;
     }
 
     // Method to post a new tweet
-    @PostMapping(value = "/tweets/{username}/add", consumes = {
+    @PostMapping(value = API_V1_POST_NEW_TWEET, consumes = {
             MediaType.ALL_VALUE
     },
             produces = {
@@ -54,7 +64,7 @@ public class UserTweetController {
     }
 
     // Method to retrieve all tweets
-    @GetMapping(value = "/tweets/all")
+    @GetMapping(value = API_V1_TWEETS_ALL)
     public ResponseEntity<?> getAllTweets() {
 
         try {
@@ -67,7 +77,7 @@ public class UserTweetController {
     }
 
     // Method to get a user's tweets
-    @GetMapping(value = "/tweets/{username}", consumes = {
+    @GetMapping(value = API_V1_TWEETS_USERNAME, consumes = {
             MediaType.ALL_VALUE
     },
             produces = {
@@ -85,7 +95,7 @@ public class UserTweetController {
         }
     }
 
-    @GetMapping(value = "/tweets/{username}/{tweetId}", consumes = {
+    @GetMapping(value = API_V1_TWEETS_USERNAME_TWEET_ID, consumes = {
             MediaType.ALL_VALUE
     },
             produces = {
@@ -102,7 +112,7 @@ public class UserTweetController {
     }
 
     // Method to update a tweet
-    @PutMapping(value = "/tweets/{username}/update", consumes = {
+    @PutMapping(value = API_V1_TWEETS_USERNAME_UPDATE, consumes = {
             MediaType.ALL_VALUE
     },
             produces = {
@@ -121,7 +131,7 @@ public class UserTweetController {
     }
 
     // Method to delete a tweet
-    @DeleteMapping(value = "/tweets/{username}/delete", consumes = {
+    @DeleteMapping(value = API_V1_TWEETS_USERNAME_DELETE, consumes = {
             MediaType.ALL_VALUE
     },
             produces = {
@@ -140,7 +150,7 @@ public class UserTweetController {
     }
 
     // Post tweets Like
-    @PostMapping(value = "/tweets/{username}/like/{tweetId}", consumes = {
+    @PostMapping(value = API_V1_TWEETS_USERNAME_LIKE_TWEET_ID, consumes = {
             MediaType.ALL_VALUE
     },
             produces = {
@@ -159,7 +169,7 @@ public class UserTweetController {
     }
 
     // dislike a tweet
-    @PostMapping(value = "/tweets/{username}/dislike/{tweetId}", consumes = {
+    @PostMapping(value = API_V1_TWEETS_USERNAME_DISLIKE_TWEET_ID, consumes = {
             MediaType.ALL_VALUE
     },
             produces = {
@@ -178,7 +188,7 @@ public class UserTweetController {
     }
 
     // Post tweet comment
-    @PostMapping(value = "/tweets/{username}/reply/{tweetId}", consumes = {
+    @PostMapping(value = API_V1_TWEETS_USERNAME_REPLY_TWEET_ID, consumes = {
             MediaType.ALL_VALUE
     },
             produces = {

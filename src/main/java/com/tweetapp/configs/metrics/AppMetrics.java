@@ -1,8 +1,5 @@
 package com.tweetapp.configs.metrics;
 
-import lombok.AccessLevel;
-import lombok.NoArgsConstructor;
-
 /**
  * Responsible to hold Prometheus Counter Metrics.
  *

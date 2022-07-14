@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.tweetapp.dto.AuthenticationResponse;
@@ -24,16 +25,21 @@ import com.tweetapp.services.UserOperationsService;
 @Log4j2
 @CrossOrigin(origins = "http://localhost:4200")
 @RestController
+@RequestMapping("/api/v1.0")
 public class UserController {
 
     private final UserOperationsService userModelService;
+
+    private static final String API_V1_CHANGE_PASSWORD = "/tweets/{username}/forgot";
+    private static final String API_V1_GET_ALL_USERS = "/tweets/users/all";
+    private static final String API_V1_SEARCH_BY_USERNAME = "/tweets/user/search/{username}";
 
     public UserController(@Qualifier("user-model-service") UserOperationsService userModelService) {
         this.userModelService = userModelService;
     }
 
     //method to update user password
-    @PutMapping(value = "/tweets/{username}/forgot", consumes = {
+    @PutMapping(value = API_V1_CHANGE_PASSWORD, consumes = {
             MediaType.APPLICATION_JSON_VALUE,
             MediaType.TEXT_PLAIN_VALUE,
             MediaType.ALL_VALUE
@@ -54,7 +60,7 @@ public class UserController {
     }
 
     // Method to retrieve all users list
-    @GetMapping(value = "/tweets/users/all", consumes = {
+    @GetMapping(value = API_V1_GET_ALL_USERS, consumes = {
             MediaType.APPLICATION_JSON_VALUE,
             MediaType.TEXT_PLAIN_VALUE,
             MediaType.ALL_VALUE
@@ -71,7 +77,7 @@ public class UserController {
     }
 
     //method to search for like users by username
-    @GetMapping(value = "/tweets/user/search/{username}", consumes = {
+    @GetMapping(value = API_V1_SEARCH_BY_USERNAME, consumes = {
             MediaType.APPLICATION_JSON_VALUE,
             MediaType.TEXT_PLAIN_VALUE,
             MediaType.ALL_VALUE
