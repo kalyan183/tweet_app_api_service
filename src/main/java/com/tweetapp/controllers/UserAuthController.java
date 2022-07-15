@@ -27,7 +27,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @project TweetApp-API
  * @since 06/07/2022 - 08:37 PM
  */
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "http://ui-tweet-app.s3-website.ap-south-1.amazonaws.com")
 @RestController
 @Api
 @Log4j2
