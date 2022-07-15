@@ -30,7 +30,7 @@ public class UserController {
 
     private final UserOperationsService userModelService;
 
-    private static final String API_V1_CHANGE_PASSWORD = "/tweets/{username}/forgot";
+    private static final String API_V1_UPDATE_SECRET = "/tweets/{username}/forgot";
     private static final String API_V1_GET_ALL_USERS = "/tweets/users/all";
     private static final String API_V1_SEARCH_BY_USERNAME = "/tweets/user/search/{username}";
 
@@ -39,7 +39,7 @@ public class UserController {
     }
 
     //method to update user password
-    @PutMapping(value = API_V1_CHANGE_PASSWORD, consumes = {
+    @PutMapping(value = API_V1_UPDATE_SECRET, consumes = {
             MediaType.APPLICATION_JSON_VALUE,
             MediaType.TEXT_PLAIN_VALUE,
             MediaType.ALL_VALUE
