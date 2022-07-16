@@ -23,7 +23,7 @@ import com.tweetapp.services.UserOperationsService;
  * @since 06/07/2022 - 08:37 PM
  */
 @Log4j2
-@CrossOrigin(origins = "http://ui-tweet-app.s3-website.ap-south-1.amazonaws.com")
+@CrossOrigin(origins = "http://localhost:4200")
 @RestController
 @RequestMapping("/api/v1.0")
 public class UserController {
